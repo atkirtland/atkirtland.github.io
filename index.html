@@ -1,74 +1,49 @@
+---
+---
+
+
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/site.css" />
+  <script src="js/site.js"></script>
   <title> Aaron Kirtland </title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <p><img align="middle" src="aaron.jpg" width="150px" alt="Aaron Kirtland" /></p>
+  <header>
+    {% include header.html %}
+  </header>
+  <p><img align="middle" src="res/aaron.jpg" width="150px" alt="Aaron Kirtland" /></p>
   <p>
     Hi! I am Aaron, a freshman at <a href="https://wustl.edu/">Washington University in St. Louis</a> studying computer science and Chinese.
   </p>
   <p>
-    I am a big fan of letters and emails. My email is below.
+    I have a <a href="blog.html">blog</a> with content coming soon. I am a big fan of letters and emails. My email is below.
   </p>
+  <h3>Projects</h3>
+  <ul>
+    {% include project.html link="https://github.com/aarkir/haskell-gb" title="HaskellGB" tags="[Haskell]" description="a Z80 Gameboy emulator" %}
+    {% include project.html link="https://github.com/aarkir/mathematica-pacman" title="Mathematica Pacman" tags="[Mathematica]" description="a clone of Pac-Man in Mathematica" %}
+    {% include project.html link="https://github.com/aarkir/tile-launcher" title="Tile Launcher" tags="[Android][Java]" description="Launcher where icon size changes with usage frequency" %}
+    {% include project.html link="https://github.com/aarkir/handwriting-practice-app" title="Character Practice Whiteboard" tags="[Android][Java]" description="practice writing in languages with logograms like Chinese" %}
+    {% include project.html link="https://github.com/aarkir/harry-potter-alexa-skill" title="Characters for Harry Potter" tags="[Alexa]" description="speaks a Harry Potter character's summary given their name" %}
+  </ul>
+
+  <h3>Social</h3>
+  <ul>
+    {% include social.html link="aaronk3.14@gmail.com" name="Email" %}
+    {% include social.html link="https://www.linkedin.com/in/aaron-kirtland-333616114/" name="Linkedin" %}
+    {% include social.html link="https://keybase.io/aarkir" name="Keybase" %}
+    {% include social.html link="https://github.com/aarkir" name="GitHub" %}
+    {% include social.html link="https://twitter.com/aarkir" name="Twitter" %}
+    {% include social.html link="https://www.instagram.com/aarkir/" name="Instagram" %}
+  </ul>
+  <footer>
+    {% include footer.html %}
+  </footer>
 </body>
-
-<h3>Projects</h3>
-<ul>
-  <li>
-    <font size=-1>(<a href="https://github.com/aarkir/haskell-gb">GIT</a>)</font>
-    WIP: HaskellGB
-    <font size=-1>[Haskell]</font>
-    <br />a Z80 GameBoy emulator
-  </li>
-  <li>
-    <font size=-1>(<a href="https://github.com/aarkir/mathematica-pacman">GIT</a>)</font>
-    Mathematica Pacman
-    <font size=-1>[Mathematica]</font>
-    <br />a clone of Pac-Man in Mathematica
-  </li>
-  <li>
-    <font size=-1>(<a href="https://github.com/aarkir/tile-launcher">GIT</a>)</font>
-    Tile Launcher
-    <font size=-1>[Android][Java]</font>
-    <br />Launcher where icon size changes with usage frequency
-  </li>
-  <li>
-    <font size=-1>(<a href="https://github.com/aarkir/handwriting-practice-app">GIT</a>)</font>
-    Character Practice Whiteboard
-    <font size=-1>[Android][Java]</font>
-    <br/>practice writing in languages with logograms like Chinese
-  </li>
-  <li>
-    <font size=-1>(<a href="https://github.com/aarkir/harry-potter-alexa-skill">GIT</a>)</font>
-    Characters for Harry Potter
-    <font size=-1>[Alexa]</font>
-    <br />speaks a Harry Potter character's summary given their name
-  </li>
-</ul>
-
-<h3>Social</h3>
-<ul>
-  <li>
-    <a href="mailto:aaronk3.14@gmail.com">Email</a>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/in/aaron-kirtland-333616114/">Linkedin</a>
-  </li>
-  <li>
-    <a href="https://keybase.io/aarkir">Keybase</a>
-  </li>
-  <li>
-    <a href="https://github.com/aarkir">GitHub</a>
-  </li>
-  <li>
-    <a href="https://twitter.com/aarkir">Twitter</a>
-  </li>
-  <li>
-    <a href="https://www.instagram.com/aarkir/">Instagram</a>
-  </li>
-</ul>
 
 </html>

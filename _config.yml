@@ -1,0 +1,5 @@
+encoding: utf-8
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+github: [metadata]

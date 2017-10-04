@@ -1,0 +1,37 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <link type="application/atom+xml" rel="alternate href="
+	<link rel="stylesheet" href="/css/site.css">
+	<script src="/js/site.js"></script>
+	<title>For All K</title>
+</head>
+<body>
+	<header>
+		{% include header.html %}
+	</header>
+  <p>
+    <a href="index.html">Home</a>
+    <a href="feed.xml">RSS Feed</a>
+  </p>
+  <h1>
+    For All K
+  </h1>
+    <ul>
+		{% for post in site.posts %}
+    <li>
+				<a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
+				{{ post.date | date_to_string }}
+
+    </li>
+		{% endfor %}
+    </ul>
+	<footer>
+		{% include footer.html %}
+	</footer>
+</body>
+</html>
