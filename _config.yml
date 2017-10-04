@@ -1,4 +1,6 @@
 encoding: utf-8
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 permalink: pretty
+disqus: aarkir-com
