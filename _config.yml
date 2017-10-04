@@ -3,4 +3,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 permalink: pretty
-disqus: aarkir-com
+comments:
+  provider: disqus
+disqus:
+  shortname: aarkir-com
