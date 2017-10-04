@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/aarkir
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aarkir.com
+  * I am aarkir (https://keybase.io/aarkir) on keybase.
+  * I have a public key ASDI42QdCNNDj3AvMo5tDJUgVDCV7u7_EIdu12aCYSuqCgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b097e2210abf3fb6a11d1db24cbd58d92bf51102cffdbdd8a6736dbed544b3510a",
+      "host": "keybase.io",
+      "kid": "0120c8e3641d08d3438f702f328e6d0c9520543095eeeeff10876ed76682612baa0a0a",
+      "uid": "54f38a67e4931e8194dd85260044df19",
+      "username": "aarkir"
+    },
+    "merkle_root": {
+      "ctime": 1507086796,
+      "hash": "38855bb50a216e72b3837f25d768252f6678a68b93bece59cf48f2a9fdc19c3f9408a428975968305adea71ee1c97c49d8710ca62632a17802ef704ed77249d0",
+      "hash_meta": "8370a96d0e7a724b8ba957df5c6a02bf9906756c11d055722e182fcfc8f1c7f8",
+      "seqno": 1492768
+    },
+    "service": {
+      "hostname": "aarkir.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1507086817,
+  "expire_in": 504576000,
+  "prev": "ac5b75504d8e335dd4edb73bf298724acb9db73212caae71551823cd0f9baa85",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyONkHQjTQ49wLzKObQyVIFQwle7u/xCHbtdmgmErqgoKp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjA5N2UyMjEwYWJmM2ZiNmExMWQxZGIyNGNiZDU4ZDkyYmY1MTEwMmNmZmRiZGQ4YTY3MzZkYmVkNTQ0YjM1MTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYzhlMzY0MWQwOGQzNDM4ZjcwMmYzMjhlNmQwYzk1MjA1NDMwOTVlZWVlZmYxMDg3NmVkNzY2ODI2MTJiYWEwYTBhIiwidWlkIjoiNTRmMzhhNjdlNDkzMWU4MTk0ZGQ4NTI2MDA0NGRmMTkiLCJ1c2VybmFtZSI6ImFhcmtpciJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwNzA4Njc5NiwiaGFzaCI6IjM4ODU1YmI1MGEyMTZlNzJiMzgzN2YyNWQ3NjgyNTJmNjY3OGE2OGI5M2JlY2U1OWNmNDhmMmE5ZmRjMTljM2Y5NDA4YTQyODk3NTk2ODMwNWFkZWE3MWVlMWM5N2M0OWQ4NzEwY2E2MjYzMmExNzgwMmVmNzA0ZWQ3NzI0OWQwIiwiaGFzaF9tZXRhIjoiODM3MGE5NmQwZTdhNzI0YjhiYTk1N2RmNWM2YTAyYmY5OTA2NzU2YzExZDA1NTcyMmUxODJmY2ZjOGYxYzdmOCIsInNlcW5vIjoxNDkyNzY4fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImFhcmtpci5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMyJ9LCJjdGltZSI6MTUwNzA4NjgxNywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJhYzViNzU1MDRkOGUzMzVkZDRlZGI3M2JmMjk4NzI0YWNiOWRiNzMyMTJjYWFlNzE1NTE4MjNjZDBmOWJhYTg1Iiwic2Vxbm8iOjEyLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQKHRMm8GbBpCFwABjT4HJ0BfbVhhXTW/ygb2KqBc0jxFfiAWM1M83h5svPo3LQC+jUdkGvD4u17F7Pv0YNJQnAmoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBTPTbURhjmqedhf6UOydO/IDC8wJ8GukebollDG9mwWaN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aarkir
+
+==================================================================
