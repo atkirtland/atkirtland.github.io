@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Fibonacci Dates"
+comments: true
+---
+
+  <p>
+    Last month [today is 9/10/17], I started taking my notes in a format similar to the
+    paper version of <a href="https://www.supermemo.com/en/frontpage">SuperMemo</a>. I didn't know about SuperMemo, but my style was based on
+    <a href="https://apps.ankiweb.net/">Anki</a>. Regardless, I needed an efficient way to keep track of which dates to recurse learning upon.
+    I chose the Fibonacci numbers, which yield an aymptotic ratio of:
+<p>
+  $$
+  \phi=\frac{1+\sqrt{5}}{2}\approx{1.618033987....}
+  $$
+</p>
+    SuperMemo recommends a ratio of 1.5 to 2.0, so this is on the lower end of that spectrum. I'll experiment with this a while and update if I
+    change my technique. For now, it's a nice mathematical relation.
+  </p>
+  <p>
+    See the dates below to know which days to review. SuperMemo recommends reviewing about 15 minutes per day, so go quickly!
+  </p>
+
+<ul id="list"></ul>
+
+<script>
+window.onload = function() {
+var list = document.getElementById("list");
+var today = new Date();
+var fibonacci = [
+  0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584,
+  4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229
+];
+for (var i = 0; i < fibonacci.length; ++i) {
+  // always give credit where deserved
+  // https://stackoverflow.com/questions/8842732/how-to-get-30-days-prior-to-current-date
+  var prior = new Date(new Date().setDate(new Date().getDate() - fibonacci[i]));
+
+  var newitem = document.createElement("ul");
+  var date = document.createTextNode(prior.toDateString());
+  newitem.appendChild(date);
+  list.appendChild(newitem);
+}
+}
+</script>
