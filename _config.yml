@@ -2,8 +2,17 @@ encoding: utf-8
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-permalink: pretty
+permalink: /blog/:title
 comments:
   provider: disqus
 disqus:
   shortname: aarkir-com
+github: [metadata]
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
