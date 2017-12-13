@@ -1,5 +1,5 @@
 encoding: utf-8
-plugins:
+plugins_dir:
   - jekyll-feed
   - jekyll-sitemap
 permalink: /blog/:title
