@@ -6,7 +6,7 @@ permalink: /blog/:title
 comments:
   provider: disqus
 disqus:
-  shortname: aarkir-com
+  shortname: for-all-k
 github: [metadata]
 defaults:
   -
