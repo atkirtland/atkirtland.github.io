@@ -1,3 +1,10 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+
+tex/*.aux
+tex/*.idx
+tex/*.log
+tex/*.out
+tex/*.gz
+tex/*.toc

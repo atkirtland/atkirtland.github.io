@@ -1,0 +1,32 @@
+---
+---
+
+@import "normalize";
+@import "main";
+
+.conjecture, .corollary, .definition, .example, .proof, .question, .theorem {
+  display: block;
+  font-style: normal;
+}
+
+.conjecture:before, .corollary:before, .definition:before, .example:before, .proof:before, .question:before, .theorem:before {
+  content: attr(class) ". ";
+  font-weight: bold;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.conjecture[text]:before, .corollary[text]:before, .definition[text]:before, .example[text]:before, .proof[text]:before, .question[text]:before, .theorem[text]:before {
+  content: attr(class) " (" attr(text) ") ";
+  font-transform: capitalize;
+}
+
+.theorem {
+  font-style: italic;
+}
+
+body {
+  margin: 0 25% 0 25%;
+  word-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+}
