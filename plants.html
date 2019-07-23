@@ -1,0 +1,50 @@
+---
+---
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+  <script src="/assets/js/site.js"></script>
+  <title>Aaron Kirtland</title>
+</head>
+
+<body>
+  <header>
+    {% include menu.html %}
+  </header>
+
+<style>
+body {
+  margin: 0 0 0 0;
+  word-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+}
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
+
+<div class="google-maps">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZE3uoanlwLEkIqIiLnqbzpGpQCClsOzl" width="640" height="480" frameborder="0" style="border:0"></iframe>
+</div>
+
+  <footer>
+    {% include footer.html %}
+  </footer>
+</body>
+
+</html>

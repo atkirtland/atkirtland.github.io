@@ -233,9 +233,47 @@ $T_x X$ is a real vector space.
 \begin{proof}
 \end{proof}
 
+\begin{definition}[graded ring]
+  A \define{graded ring} is a ring $R=⊕ _{g∈ G}R_g$ such that $R_{g} × R_{g'}=R_{gg'}$.
+\end{definition}
+
+\begin{example}
+  \begin{itemize}
+    \item the \define{trivial gradation} $R_0=R,R_i=0$ for $i≠0$.
+    \item The polynomial ring $S=R[x_1,…,x_d]$ where $S_n$ is the set of polynomials in $S$ of degree $n$
+  \end{itemize}
+\end{example}
+
+\begin{definition}[graded module]
+  Let $R$ be a graded ring.
+  Let $M$ be a left $R$-module.
+  $M$ is graded if $M=⊕ _{i∈ ℕ } M_i$ and $R_iM_j⊆ M_{i+j}$.
+\end{definition}
+\begin{example}
+  TODO
+\end{example}
+
+\begin{definition}[monoidal category]
+  Let $C$ be a category.
+  Let $⊗ $ be a functor in the product category of $C$ with itself.
+  Let $1∈ C$ be the tensor unit.
+  Let $a$.
+  A category $C$ equipped with a functor called the \define{tensor product} in the product category of $C$ with itself
+\end{definition}
+
+\begin{definition}[enriched category]
+  Let $V$ be a monoidal category.
+  Let $C$ be a category.
+  A $V$-enriched category $C$ consists of the objects of $C$, 
+\end{definition}
+
+
+
 \begin{definition}[exterior algebra]
   \url{https://ncatlab.org/nlab/show/exterior+algebra}
 \end{definition}
+
+I think that it's clearer here to just explore the case for vector spaces, as at the moment I don't have much to motivate the general categoric-theoretical construction.
 
 \begin{definition}[differential form]
   \url{https://ncatlab.org/nlab/show/differential+form}
