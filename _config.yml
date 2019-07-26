@@ -3,6 +3,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 permalink: /blog/:title
+collections:
+  lists:
+    output: true
 comments:
   provider: disqus
 disqus:
