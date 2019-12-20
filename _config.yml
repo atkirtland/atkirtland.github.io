@@ -2,20 +2,19 @@ encoding: utf-8
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-permalink: /blog/:title
+comments:
+  provider: disqus
 collections:
   lists:
     output: true
-comments:
-  provider: disqus
-disqus:
-  shortname: for-all-k
-github: [metadata]
 defaults:
-  -
+  - 
     scope:
       path: ""
       type: posts
     values:
       layout: post
       comments: true
+disqus:
+  shortname: for-all-k
+github: [metadata]

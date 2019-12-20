@@ -1,7 +1,8 @@
 ---
+layout: page
 ---
 
-# Quotes
+Here's a collection of goofy, pretty <a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BA%8C%E7%97%85">中二</a> quotes I had going for a while.
 
 I just put whitespace-formatted quotes, like poems, in a code block to preserve whitespace.
 There are a few tools to make this more natural-looking, but I haven't seen anything with just plain Markdown before.
@@ -132,6 +133,10 @@ It is enough I may but call her mine.
 > And von Neumann gave me an interesting idea: that you don't have to be responsible for the world that you're in. So I have developed a very powerful sense of social irresponsibility as a result of von Neumann's advice. It's made me a very happy man ever since. But it was von Neumann who put the seed in that grew into my active irresponsibility! 
 
 > So I found hypnosis to be a very interesting experience. All the time you're saying to yourself, "Icould do that, but I won't"--which is just another way of saying that you can't. 
+
+Other Feynman:
+
+http://www.lettersofnote.com/2015/10/do-not-remain-nameless-to-yourself.html
 
 ## Meditations
 
