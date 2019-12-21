@@ -41,6 +41,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 ## Notation
 
+- 經由A via A
 - 在圖中以紅圈和藍圈分別標出 they are shown with the blue and red circles
 - 蘊含 this choice implies (個設定蘊含了)
 - 由A刻劃 be characterized by A
@@ -903,3 +904,36 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 - 微分幾何 differential geometry
 - 類體論 class field theory
+
+## Quantum Mechanics
+
+- 相對論 theory of relativity
+- 現代物理學 modern physics
+- 原子物理學 atomic physics
+- 固態物理學 solid state physics
+- 核物理學 nuclear physics
+- 粒子物理學 particle physics
+- 古典物理學 classical physics
+- 微觀系統 subatomic systems
+- 廣義相對論 general relativity
+- 重力 gravity
+- 基本交互作用 fundamental forces
+- 量子場論 quantum field theory
+- 量子光學 quantum optics
+- 超導磁體 superconducting magnet
+- 發光二極體 LED
+- 雷射器 laser
+- 電晶體 transistor
+- 半導體 semiconductor
+- 微處理器 microprocessor
+- 愛因斯坦 Einstein
+- 黑體 black body
+- 黑體輻射 black body radiation
+
+## 量子計算 Quantum Computation
+
+- 量子力學 quantum mechanics
+- 量子測量 quantum measurement
+- 干擾 interference
+
+- 
