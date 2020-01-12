@@ -41,6 +41,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 ## Notation
 
+- 我們用「數學歸納法」證明
 - 經由A via A
 - 在圖中以紅圈和藍圈分別標出 they are shown with the blue and red circles
 - 蘊含 this choice implies (個設定蘊含了)
@@ -519,7 +520,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - characteristic polynomial特徵多項式
 - characteristic root特徵根
 - eigenvalue特徵值
-- eigenvector特徵向量
+- 特徵向量,本徵向量,固有向量, eigenvector
 - geometric multiplicity幾何重數
 
 ### Dual space
@@ -929,6 +930,95 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 愛因斯坦 Einstein
 - 黑體 black body
 - 黑體輻射 black body radiation
+
+- 量子態 quantum state
+- 態向量 state vector
+- 狄拉克標記 Dirac notation
+- 包量 bra
+- 括量 ket
+- 共軛轉置 conjugate transpose
+- 光譜 spectrum
+- 發射 emission
+- 電磁輻射 electromagnetic radiation
+- 化學元素 chemical element
+- 氫原子 hydrogen
+- 能級 energy level
+- 主量子數 principal quantum number
+- 純態 pure state
+- 混合態 mixed state
+- 密度矩陣 density matrix
+- 哥本哈根詮釋 Copenhagen interpretation
+- 斯特恩-革拉赫實驗 Stern-Gerlach experiment
+- 束 beam (銀原子束)
+- 分量 component of a vector
+- 上旋 spin up
+- 下旋 spin down
+- 製備 to prepare (in chemistry or physics)
+- 可觀察量 observable
+- 機率密度 probability density
+- 動量 momentum
+- 位置 position
+- 初始條件 initial conditions
+- 決定性 determinism
+- 外力 external force
+- 動能 kinetic energy
+- 牛頓運動定律 Newton's Laws of Motion
+- 不確定性原理 uncertainty principle
+- 基態 ground state
+- 激發態 excited state
+- 厄米共軛 Hermitian conjugate
+- 算符 operator
+- 機率幅 probability amplitude
+- 交換子, 換位子 commutator
+- 對易關係 commutation relation
+- 不相容可觀察量 non mutually observable quantities
+- 正交歸一性 orthonormality
+- 狄拉克δ函數 Dirac delta function
+- 克羅內克δ函數 Kronecker delta
+- 波動力學 wave mechanics
+- 波函數 wave function
+- [態]疊加,量子疊加 superposition (兩個不同量子態的疊加)
+- 原理 principle
+- 歸一化 orthonormalization (可能尚未歸一化)
+- 整體的相位因子 overall phase factor
+- 相對的相位因子 relative phase factor
+- 雙縫實驗 two slit experiment
+- 光子 photon
+- 偵測屏障 detection barrier
+- 相長干涉 constructive interference
+- 破壞性干涉 destructive interference 
+- 諧振子 harmonic oscillator
+- 定態 stationary state
+
+- 量子位元、Q位元 qubit
+- 量子資訊學 quantum information studies
+- 雙態系統 two-state system
+- 自旋 spin
+- 本徵態 eigenstate
+- 投影式量子測量 projection measurement
+- 線性疊加 linear superposition
+- 布洛赫球面 Bloch sphere
+- 量子力學詮釋 interpretation of quantum mechanics
+
+- 包立矩陣 Pauli matrices
+- 么正矩陣 unitary matrices
+- 對合 involutive
+- 跡 trace (of a matrix)
+- 愛因斯坦求和約定 Einstein summation convention
+- 時空 spacetime
+- 閔考斯基時空 Minkowski spacetime
+- 列維-奇維塔符號 Levi-Civita symbol
+- 餘弦 cosine
+- 泰勒級數 Taylor series
+- 張量積  tensor product
+- 哈密頓力學 Hamiltonion mechanics
+- 哈密頓量 Hamiltonian
+- 勒壤得轉換 Legendre transformation
+- 四元數 quaternions
+- 拉格朗日量 Lagrangian
+- 反元素 inverse element
+- 格拉姆-施密特正交化 Gram-Schmidt orthonormalization process
+- 共軛複數 complex conjugate
 
 ## 量子計算 Quantum Computation
 
