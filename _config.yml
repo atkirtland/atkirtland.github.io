@@ -2,6 +2,7 @@ encoding: utf-8
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+markdown: CommonMarkGhPages
 comments:
   provider: disqus
 collections:

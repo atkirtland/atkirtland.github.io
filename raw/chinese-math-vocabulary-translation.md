@@ -15,11 +15,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 # 數學術語
 
-<!-- this file was generated from a file in /raw -->
-<details>
-
-<summary><h2 style='display: inline'>Uncategorized
-</h2></summary>
+## Uncategorized
 
 - 上標記
 - 既有
@@ -37,22 +33,14 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 性質
 - 指標
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>other
-</h2></summary>
+## other
 
 - 代數幾何 algebraic geometry
 - 射影幾何 projective geometry
 - 射影空間 projective space
 - 代數簇(ㄘㄨˋ) varietry
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>Notation
-</h2></summary>
+## Notation
 
 - 我們用「數學歸納法」證明
 - 經由A via A
@@ -123,11 +111,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 則任何形同A的 then any like A
 - A和B相同 A and B are the same
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>Basic
-</h2></summary>
+## Basic
 
 - 個數 count or number (noun)
 - 自然數 natural number
@@ -168,11 +152,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 序數 ordinal
 - 常數 constant
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>Laws
-</h2></summary>
+## Laws
 
 - 交換律 commutativity law
 - 結合律 associativity law
@@ -181,11 +161,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 等式 equality (a=bc是等式）
 - 十進位 decimal system
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>多項式 Polynomials
-</h2></summary>
+## 多項式 Polynomials
 
 - n次的 degree n
 - 不知數 unknown quantity
@@ -210,16 +186,9 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 重數 multiplicity
 
 
+## 幾何 Geometry
 
- </details><details>
-
-<summary><h2 style='display: inline'>幾何 Geometry
-</h2></summary>
-
-<details>
-
-<summary><h3 style='display: inline'>通用
-</h3></summary>
+### 通用
 
 - 相似 similar
 - 全等 congruent
@@ -246,21 +215,13 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 直径 diameter
 - 相交 intersection
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>圓錐曲線 Conic Sections
-</h3></summary>
+### 圓錐曲線 Conic Sections
 
 - 拋物線 parabola
 - 雙曲線 hyperbola
 - 椭圆 ellipse
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>角 Angles
-</h3></summary>
+### 角 Angles
 
 - alternate angle 內錯角
 - corresponding angle 同位角；直角
@@ -278,11 +239,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - straight angle 平角
 - included angle 夾角
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>三角形
-</h3></summary>
+### 三角形
 
 - equilateral triangle 等邊三角形
 - scalene triangle 不等邊三角形
@@ -292,11 +249,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - inscribed triangle 內接三角形
 - circumscribed triangle 外切三角形
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>除三角形外封閉平面圖形
-</h3></summary>
+### 除三角形外封閉平面圖形
 
 - semicircle 半圓
 - concentric circles 同心圓
@@ -316,11 +269,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - rhombus 菱形
 - trapezoid 梯形
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>其它平面圖形
-</h3></summary>
+### 其它平面圖形
 
 - arc 弧
 - line, straight line 直線
@@ -328,11 +277,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - parallel lines 平行線
 - segment of a circle
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>立體圖形
-</h3></summary>
+### 立體圖形
 
 - 立方體 cube
 - 雙曲面 hyperboloid
@@ -350,11 +295,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - sphere 球體
 - 四面體 tetrahedron
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>圖形特徵的描述
-</h3></summary>
+### 圖形特徵的描述
 
 - altitude 高
 - depth 深度
@@ -385,11 +326,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - tangent 切線
 - transversal 截線
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>其它
-</h3></summary>
+### 其它
 
 - plane geometry平面幾何
 - trigonometry三角學
@@ -402,12 +339,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - congruent全等的
 - multilateral多邊的
 
-
- </details>
- </details><details>
-
-<summary><h2 style='display: inline'>precalculus
-</h2></summary>
+## precalculus
 
 - 正弦 sine
 - 正弦曲線 sine curve
@@ -419,21 +351,13 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 曲線 curved line
 - 單位圓 unit circle
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>數學家 Mathematicians
-</h2></summary>
+## 數學家 Mathematicians
 
 - 歐幾里得 euclid
 - 歐拉 euler
 - 伯努利 
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>集合 Set Theory
-</h2></summary>
+## 集合 Set Theory
 
 - 元素 element
 - 子集 subset
@@ -461,11 +385,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 描述集合論 descriptive set theory
 - 超限歸納法 transfinite induction
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>函數 Functions
-</h2></summary>
+## 函數 Functions
 
 - 定義域 domain
 - 複合函數 composed function
@@ -485,11 +405,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 單射函數 injective function
 - 逆函數 inverse function
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>數論 Number Thery
-</h2></summary>
+## 數論 Number Thery
 
 - ｎ次單位根
 - 歐拉函數
@@ -499,11 +415,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 輾轉相餘法、歐幾里得算法 Euclidean algorithm
 - 互質、互素 relatively prime
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>邏輯 Logic
-</h2></summary>
+## 邏輯 Logic
 
 - 謂詞邏輯
 - 符號邏輯
@@ -519,28 +431,17 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 推理出 infers
 - 得證 is proven (原命題~)
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>Linear Algebra 線性代數
-</h2></summary>
+## Linear Algebra 線性代數
 
 
-<details>
-
-<summary><h3 style='display: inline'>Systems of equations
-</h3></summary>
+### Systems of equations
 
 - linear equation線性方程
 - linear transformation線性變換
 - fundamental solution基本解
 - homogeneous equation齊次方程
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Vectors and scalars
-</h3></summary>
+### Vectors and scalars
 
 - 範數/長度/模長 norm
 - 向量 vector
@@ -549,11 +450,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - scalar標量
 - 零向量 zero vector
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Linear combinations
-</h3></summary>
+### Linear combinations
 
 - 線性組合 linear combination
 - 凸組合 convex combination
@@ -564,11 +461,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 標準正交基 orthonormal basis
 - 正交基 orthogonal basis
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Matrix
-</h3></summary>
+### Matrix
 
 - 伴隨矩陣 (adjugate matrix)
 - algebraic cofactor代數餘子式
@@ -601,20 +494,12 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - normal matrix正規矩陣
 - normal form標準型
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Dimension
-</h3></summary>
+### Dimension
 
 - dimension維數
 - infinite dimensional無窮維的
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Eigenvectors
-</h3></summary>
+### Eigenvectors
 
 - characteristic polynomial特徵多項式
 - characteristic root特徵根
@@ -622,11 +507,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 特徵向量,本徵向量,固有向量, eigenvector
 - geometric multiplicity幾何重數
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Dual space
-</h3></summary>
+### Dual space
 
 - 多重線性代數 multilinear algebra
 - 內積空間 inner product space
@@ -637,20 +518,11 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - least squares problem最小二乘問題
 - 零空間 nullspace
 
-
- </details>
- </details><details>
-
-<summary><h2 style='display: inline'>Triangles
-</h2></summary>
+## Triangles
 
 - 銳角 acute angle
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>物理 Physics
-</h2></summary>
+## 物理 Physics
 
 - 加速度 acceleration
 - 冰點 freezing point
@@ -659,11 +531,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 動力系統 mechanical system
 - 量子力學 quantum mechanics
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>計算機 Computers
-</h2></summary>
+## 計算機 Computers
 
 - 處理器 processor
 - 前饋神經網絡 
@@ -671,11 +539,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 遞歸神經網絡
 - 深度學習
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>機率ｏｒ概率和統計
-</h2></summary>
+## 機率ｏｒ概率和統計
 
 - 衆數 mode
 - 平均數 mean
@@ -695,11 +559,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 隨機變量 random variable
 - 博弈論 game theory
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>抽象代數 abstract algebra
-</h2></summary>
+## 抽象代數 abstract algebra
 
 - 二元運算 binary operation
 - 單位元素 unit element
@@ -737,11 +597,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 環上的模 module over a ring
 - 羣表示論 group representation theory
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>Calculus
-</h2></summary>
+## Calculus
 
 - 法线 normal line (垂直於該平面的三維向量)
 - 切平面 tangent plane
@@ -760,11 +616,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 原函數 antiderivative
 - 微分/積分算子 differential or integral operator
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>實分析 real analysis
-</h2></summary>
+## 實分析 real analysis
 
 - 閉包 set closure
 - 有界 bounded
@@ -790,11 +642,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 一致連續 uniformly continuous
 - 以x為中心 with x as the center
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>拓撲 topology
-</h2></summary>
+## 拓撲 topology
 
 - 周圍空間 ambient space
 - 拓撲性質 topological property
@@ -853,11 +701,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 可寫成單連通開子集之並
 - 加上一個無窮遠點的擴張
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>代數拓撲 algebraic topology
-</h2></summary>
+## 代數拓撲 algebraic topology
 
 - CW複形 CW complex
 - 空間偶 pair of spaces (X,A)
@@ -891,10 +735,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 纖維 fiber
 - 萬有復疊空間 universal covering space
 
-<details>
-
-<summary><h3 style='display: inline'>Homology
-</h3></summary>
+### Homology
 
 - 單純同調 simplicial homology
 - 奇異同調 singular homology
@@ -923,22 +764,14 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 半直積 semidirect product
 - n次對稱群 nth symmetric group
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Cohomology
-</h3></summary>
+### Cohomology
 
 - 上同調/[群]餘調 cohomology
 - 餘鏈 cochain
 - 對偶[化] dual[ize]
 - [n維]流形 [n]manifold
 
-
- </details><details>
-
-<summary><h3 style='display: inline'>Hopf algebras
-</h3></summary>
+### Hopf algebras
 
 - 霍普夫代數(ㄏㄨㄛˋㄆㄨˇㄈㄨ) Hopf algebra
 - 餘代數 coalgebra
@@ -950,12 +783,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 拓撲羣 topological group
 - 李羣 Lie group
 
-
- </details>
- </details><details>
-
-<summary><h2 style='display: inline'>複分析 complex analysis
-</h2></summary>
+## 複分析 complex analysis
 
 - 複數平面 complex plane
 - 黎曼球面 Reimann sphere
@@ -984,11 +812,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 羅朗展開 Laurent expansion
 - (強大的）皮卡定理 (Great) Picard's theorem
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>範疇論 Category Theory
-</h2></summary>
+## 範疇論 Category Theory
 
 - 態射 morphism
 - 箭頭 arrow
@@ -1009,11 +833,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 自同態 endomorphism
 - 自同構 automorphism
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>泛函分析 functional analysis
-</h2></summary>
+## 泛函分析 functional analysis
 
 - 勒貝格空間(ㄌㄜˋㄅㄟˋㄍㄜˊ) Lebesgue space
 - 博雷爾集、Borel集 Borel set
@@ -1027,20 +847,12 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 希爾伯特空間 Hilbert space
 - 准希爾伯特空間 pre-Hilbert space
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>differential equations
-</h2></summary>
+## differential equations
 
 - n階 order n (highest derivative)
 - m次 degree m (highest power of highest derivative)
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>differential topology
-</h2></summary>
+## differential topology
 
 - 光滑函數 smooth function
 - 連續可導 continuously differentiable
@@ -1051,11 +863,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 微分幾何 differential geometry
 - 類體論 class field theory
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>Quantum Mechanics
-</h2></summary>
+## Quantum Mechanics
 
 - 相對論 theory of relativity
 - 現代物理學 modern physics
@@ -1166,15 +974,9 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 格拉姆-施密特正交化 Gram-Schmidt orthonormalization process
 - 共軛複數 complex conjugate
 
-
- </details><details>
-
-<summary><h2 style='display: inline'>量子計算 Quantum Computation
-</h2></summary>
+## 量子計算 Quantum Computation
 
 - 量子力學 quantum mechanics
 - 量子測量 quantum measurement
 - 干擾 interference
 
-
-</details>
