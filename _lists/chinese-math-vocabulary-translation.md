@@ -171,7 +171,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
  </details><details>
 
-<summary><h2 style='display: inline'>Laws
+<summary><h2 style='display: inline'>Laws and Properties
 </h2></summary>
 
 - 交換律 commutativity law
@@ -180,6 +180,11 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 遞移關係 transitive relationship
 - 等式 equality (a=bc是等式）
 - 十進位 decimal system
+- 自反性 reflexivity
+- 反對稱性 anti-symmetric
+- 遞移性 transitive
+- 存在性 existance
+- 唯一性 uniqueness
 
 
  </details><details>
@@ -428,6 +433,10 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 歐幾里得 euclid
 - 歐拉 euler
 - 伯努利 
+- 夏爾·埃雷斯曼 Charles Ehresmann
+- 約翰·米爾諾 john milnor
+- 笛卡爾 Descartes
+- 外爾 Weyl
 
 
  </details><details>
@@ -460,6 +469,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 單元素空間 singleton set
 - 描述集合論 descriptive set theory
 - 超限歸納法 transfinite induction
+- 排容原理、容斥原理 inclusion/exclusion principle
 
 
  </details><details>
@@ -478,6 +488,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 多變量的函數 multi-valued function
 - 滿射 surjective
 - 蓋射 surjective
+- 雙射 bijection
 - 對應於 corresponds to
 - 對應域/陪域/上域/目標集合 codomain
 - 值域 image/range
@@ -609,6 +620,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 - dimension維數
 - infinite dimensional無窮維的
+- 直和 direct sum
 
 
  </details><details>
@@ -658,6 +670,8 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 電荷 electric charge
 - 動力系統 mechanical system
 - 量子力學 quantum mechanics
+- 引力場 gravitational field
+- 電磁場 electromagnetic field
 
 
  </details><details>
@@ -670,6 +684,8 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 人工智慧 artificial intelligence
 - 遞歸神經網絡
 - 深度學習
+- 晶片設計 IC integrated circuit design
+- 去中心化 decentralization
 
 
  </details><details>
@@ -694,6 +710,8 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 條件期望 conditional expectation
 - 隨機變量 random variable
 - 博弈論 game theory
+- 指示函數 indicator function
+- 期望值 expected value
 
 
  </details><details>
@@ -759,6 +777,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 調和級數 harmonic series
 - 原函數 antiderivative
 - 微分/積分算子 differential or integral operator
+- 泰勒定理 Taylor's theorem
 
 
  </details><details>
@@ -852,6 +871,10 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - A和B在局部上的性質 A and B locally 
 - 可寫成單連通開子集之並
 - 加上一個無窮遠點的擴張
+- 同胚群 homeomorphism group
+- 互斥聯集拓撲 disjoint union topology
+- 克萊因瓶 Klein bottle
+- 第二可數空間 second countable space
 
 
  </details><details>
@@ -983,6 +1006,10 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 羅朗級數 Laurent series
 - 羅朗展開 Laurent expansion
 - (強大的）皮卡定理 (Great) Picard's theorem
+- 黎曼曲面 Reimann surface
+- 解析開拓 analytic continuation
+- 泊松積分公式 Poisson integral formula
+- 泊松核 Poisson kernel
 
 
  </details><details>
@@ -1008,6 +1035,13 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 雙同態 bihomomorphism
 - 自同態 endomorphism
 - 自同構 automorphism
+- 協變 covariant
+- 反變 contravariant
+- 遺忘函子 forgetful functor
+- 自由函子 free functor
+- 伴隨函子 adjoint functor
+- 集合範疇 category of sets
+- 泛性質 universal property
 
 
  </details><details>
@@ -1039,6 +1073,29 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
  </details><details>
 
+<summary><h2 style='display: inline'>向量分析 Vector Calculus
+</h2></summary>
+
+- 梯度 gradient
+- 旋度 curl
+- 散度 divergence
+- 向量場 vector field 
+- 格林定理 Green's theorem
+- 極坐標系 polar coordinates
+- 圓柱坐標系 cylindrical coordinates
+- 球坐標系 spherical coordinates
+- 雅可比矩陣 jacobian
+- 外積 exterior/cross product
+- 純量三重積 scalar triple product
+- 向量三重積 vector triple product
+- 拉普拉斯算子 Laplacian
+- 斯托克斯定理 Stoke's Theorem
+- 梯度定理 gradient theorem
+- 高斯散度定理 divergence theorem
+
+
+ </details><details>
+
 <summary><h2 style='display: inline'>differential topology
 </h2></summary>
 
@@ -1046,10 +1103,48 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 連續可導 continuously differentiable
 - n階導數 nth derivative
 - 纖維叢 fiber bundle
-- 德拉姆餘調 de Rham cohomology
 - 拉回 pullback
 - 微分幾何 differential geometry
 - 類體論 class field theory
+- 辛幾何 symplectic geometry
+- 黎曼榴形 reimannian manifold
+- 度量張量 metric tensor
+- 階 rank of a tensor
+- 偽黎曼流形、半黎曼流形 pseudo-Reimannian manifold
+- 李代數 Lie algebra
+- 切叢、切線束 tangent (line) bundle
+- 切空間 tangent space
+- 切向量 tangent vector
+- 微分結構 differentiable structure (一個流形如何裝備一個微分結構)
+- 卡 chart
+- 圖冊 atlas
+- 座標卡 coordinate chart
+- 局部座標系 local coordinate system
+- 轉移映射 transition map
+- 光滑協調的 smoothly compatible
+- 光滑結構 smooth structure
+- 怪球面 exotic spheres
+- 微分同胚 diffeomorphism
+- 向量叢 vector bundle
+- 層 sheaf
+- 餘切叢 cotangent bundle
+- 體積形式 volume form
+- 正則座標 canonical coordiantes 
+- 哈密頓函數 Hamiltonian
+- 相空間 phase space
+- 笛卡爾積 Cartesian product
+- 芽、芽胚 germ
+- 外微分 exterior derivative
+- 德拉姆餘調 DeRham cohomology
+- 恰當形式 exact form
+- 閉形式 closed form
+- 閉流形 closed manifold
+- 緊緻流形 compact manifold
+- 前推、推出 pushforward
+- 測地線 geodesic
+- 曲率 curvature
+- 黎曼度量 Reimannian metric
+- 可微流形 differentiable manifold
 
 
  </details><details>
@@ -1165,6 +1260,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 反元素 inverse element
 - 格拉姆-施密特正交化 Gram-Schmidt orthonormalization process
 - 共軛複數 complex conjugate
+- 狹義相對論 special relativity
 
 
  </details><details>
@@ -1176,5 +1272,105 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 量子測量 quantum measurement
 - 干擾 interference
 
+
+ </details><details>
+
+<summary><h2 style='display: inline'>圖論 Graph Theory
+</h2></summary>
+
+- 鄰接矩陣 adjacency matrix
+- 頂點 vertex
+- 結點 node
+- 邊 edge
+- 二元組 2-tuple
+- 頂集 vertex set
+- 邊集 edge set
+- 簡單邊 simple edge
+- 超邊 hyperedge
+- 自環 loop
+- 無向邊 undirected edge
+- 有向邊 directed edge
+- 簡單圖 simple graph
+- 階 order (頂集的大小)
+- 子圖 subgraph
+- 度 degree
+- 出度 outdegree
+- 入度 indegree
+- 路徑 path
+- 簡單路徑 simple path
+- 迴路 circuit
+- 圈 cycle
+- 距離 distance
+- 距離矩陣 distance matrix
+- 補圖 complement graph
+- 樹 tree 
+- 完全圖 complete graph
+- 二分圖 bipartite graph
+- 正則圖 regular graph
+- 加權圖 weighted graph
+
+
+ </details><details>
+
+<summary><h2 style='display: inline'>電腦科學 Computer Science
+</h2></summary>
+
+- 深度優先搜索法 depth first search
+- 遍歷 traversal
+- 廣度優先搜索 breadth first search
+- 資料結構 data structure
+- Floyd-Warshall演算法
+- 時間複雜度 time complexity
+- 空間複雜度 space complexity
+- 動態規劃 dynamic programming
+- 最長公共子序列 longest common subsequence
+- 生物資訊學 bioinformatics
+- 版本控制 version control
+- 最長公共子串 longest common substring
+- 計算複雜性理論 computational complexity theory
+- 時間層級定理 time hierarchy theorem
+- 複雜性類別 complexity class
+- 去隨機化 derandomization
+- 演算法博弈論 algorithmic game theory
+- 近似性 approximateability
+- 交互式證明系統 interactive proof system
+- 布林函數 Boolean function
+- 布林 Boolean
+- 邱奇-圖靈論題 Church-Turing thesis
+- 多項式時間 polynomial time
+- 圖靈機 Turing machine
+- 計算模型 model of computation
+- 電路 circuit
+- 非一致性 (not)uniform
+- 可計算性理論 computability theory
+- 大O表達式 Big O representation
+- 二分搜尋演算法 binary search
+- 點集覆蓋問題 vertex cover problem
+- 歸約 reduction (A歸約到B)
+- NP完備 NP complete
+- 多項式層級 polynomial hierarchy
+- 團問題 clique problem
+- 單調性電路 monotone circuit
+- 唯一性遊戲假設 unique games conjecture
+- PCP定理 PCP theorem 
+- 啟發式演算法 heuristic algorithm
+- 背包問題 knapsack problem
+- 獨立集問題 independent set problem
+- 平均複雜性理論 average case complexity theory
+- 完美匹配問題 perfect matching problem
+
+
+ </details><details>
+
+<summary><h2 style='display: inline'>密碼學
+</h2></summary>
+
+- 對等加密 reciprocal cipher
+- 對稱密鑰加密 symmetric key encryption
+- 密鑰 secret key 
+- 公開金鑰密碼學 public key cryptography
+- 公開金鑰認證 public key certificate
+- 密碼學安全偽亂數生成器 cryptographic pseudorandom number generator
+- 數位簽章 digital signature
 
 </details>
