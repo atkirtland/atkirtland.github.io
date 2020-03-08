@@ -365,6 +365,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 約翰·米爾諾 john milnor
 - 笛卡爾 Descartes
 - 外爾 Weyl
+- 讓·勒雷 Jean Leray
 
 ## 集合 Set Theory
 
@@ -806,6 +807,10 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 拓撲羣 topological group
 - 李羣 Lie group
 
+### Other
+
+- 譜序列 spectral sequence
+
 ## 複分析 complex analysis
 
 - 複數平面 complex plane
@@ -1150,6 +1155,10 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 獨立集問題 independent set problem
 - 平均複雜性理論 average case complexity theory
 - 完美匹配問題 perfect matching problem
+- 機率圖靈機 probabilistic turing machine
+- 轉變 transition (TM)
+- 非確定型圖靈機 nondeterminstic turing machine
+- 確定型圖靈機 determinstic turing machine
 
 ## 密碼學
 
