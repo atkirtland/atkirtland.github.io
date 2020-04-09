@@ -62,6 +62,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 恆等式 identity (formula)
 - 滿足【性質、公里】 satisfies
 - 引理 lemma
+- 推論 corollary
 - 平凡 trivial
 - 正比於 is proprtional to
 - 一個奇點周圍的路徑積分複數
@@ -110,6 +111,8 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 去掉A的第i行第j列 delete...
 - 則任何形同A的 then any like A
 - A和B相同 A and B are the same
+- 便可 it suffices to
+- 得出 to use
 
 ## Basic
 
@@ -147,6 +150,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 立方根 cube root
 - 指數函數 exponential function
 - 常用對數 common logarithm
+- 對數 logarithm  
 - 除數、公約數 divisor
 - 基數 cardinal
 - 序數 ordinal
@@ -157,7 +161,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 交換律 commutativity law
 - 結合律 associativity law
 - 分配率 distributive law
-- 遞移關係 transitive relationship
+- 傳遞性、遞移關係 transitive relationship (滿足～)
 - 等式 equality (a=bc是等式）
 - 十進位 decimal system
 - 自反性 reflexivity
@@ -326,7 +330,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - base 底邊
 - opposite 直角三角形中的對邊
 - midpoint 中點
-- endpoin t端點
+- endpoint 端點
 - vertex （複數形式vertices） 頂點
 - tangent 切線
 - transversal 截線
@@ -366,6 +370,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 笛卡爾 Descartes
 - 外爾 Weyl
 - 讓·勒雷 Jean Leray
+- 卡普 Karp
 
 ## 集合 Set Theory
 
@@ -399,11 +404,11 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 ## 函數 Functions
 
 - 定義域 domain
-- 複合函數 composed function
+- 複合函數 composed function (二者的複合)
 - 合成函數  composed function
 - 恆同 identity
 - 恆等 identity TODOD
-- 映射 mapping
+- 映射 mapping (映射為~)
 - 疊代函數 repeated mapping
 - 連續函數 continuous function
 - 多變量的函數 multi-valued function
@@ -452,6 +457,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - linear transformation線性變換
 - fundamental solution基本解
 - homogeneous equation齊次方程
+- 仿射 affine
 
 ### Vectors and scalars
 
@@ -530,6 +536,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 非退化 nondegenerate
 - least squares problem最小二乘問題
 - 零空間 nullspace
+- 線性泛函 linear functional
 
 ## Triangles
 
@@ -545,6 +552,9 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 量子力學 quantum mechanics
 - 引力場 gravitational field
 - 電磁場 electromagnetic field
+- 保守向量場 conservative vector field
+- 路徑無關 irrespective of path / depends only on endpoints
+- 純量場 scalar field
 
 ## 計算機 Computers
 
@@ -555,6 +565,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 深度學習
 - 晶片設計 IC integrated circuit design
 - 去中心化 decentralization
+- 輸出 output
 
 ## 機率ｏｒ概率和統計
 
@@ -580,6 +591,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 ## 抽象代數 abstract algebra
 
+- 定義良好 well-defined 
 - 二元運算 binary operation
 - 單位元素 unit element
 - 代數結構 algebraic structure
@@ -638,10 +650,12 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 ## 實分析 real analysis
 
+- 微積分基本定理 fundamental theorem of calculus
+- 趨於 to tend towards 
 - 閉包 set closure
 - 有界 bounded
-- 上確界 supremum
-- 最小上界 infimum
+- 最小上界、上確界 supremum
+- 最大下界 infimum
 - 閉區間 closed interval
 - 單位區間 unit interval
 - 半開區間 half-open interval [0,1)
@@ -692,7 +706,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 商映射 quotient map
 - 商空間 quotient space
 - 等距映射 isometry
-- 限制 restriction (X上的~)
+- 限制 restriction (X上的~、若F限制在U)
 - 包含 inclusion
 - 開覆蓋 open cover
 - 子覆蓋 subcover
@@ -758,16 +772,19 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 局部同胚 local homeomorphism
 - 纖維 fiber
 - 萬有復疊空間 universal covering space
+- 三角剖分 triangulation
 
 ### Homology
 
 - 單純同調 simplicial homology
+- n-單純形 n-simplex
 - 奇異同調 singular homology
 - 同調 homology
 - 鏈復形 chain complex
 - n階同調群為 nth homology group
 - k維洞 k dimensional holes
 - 可定向 orientable
+- 定向 orientation
 - 自由可換群 free abelian group
 - 邊界映射 boundary map
 - 短正合序列 short exact sequence
@@ -784,7 +801,6 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 余核/上核 cokernel
 - 余秩 corank
 - 分裂 to split
-- 截面
 - 半直積 semidirect product
 - n次對稱群 nth symmetric group
 
@@ -840,9 +856,20 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 羅朗展開 Laurent expansion
 - (強大的）皮卡定理 (Great) Picard's theorem
 - 黎曼曲面 Reimann surface
-- 解析開拓 analytic continuation
+- 解析延拓 analytic continuation
 - 泊松積分公式 Poisson integral formula
 - 泊松核 Poisson kernel
+- 等度連續 equicontinuous
+- 正規族 normal family
+- 阿爾澤拉-阿斯科利定理 arzela-ascoli theorem
+- 一致有界 uniformly bounded
+- 完全有界 totally bounded
+- 狄利克雷問題 Dirichlet's problem
+- 共形映射 conformal mapping
+- 黎曼映射定理 Reimann mapping theorem
+- 施瓦茨引理 schwarz lemma
+- 極值問題 extremal problem
+- 惟一性定理 identity theorem
 
 ## 範疇論 Category Theory
 
@@ -958,6 +985,11 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 曲率 curvature
 - 黎曼度量 Reimannian metric
 - 可微流形 differentiable manifold
+- 截面 section
+- 單位分解 partition of unity
+- 支集 support
+- 會特尼嵌入定理 whitney embedding theorem
+- 斯托克斯定理 stokes' theorem
 
 ## Quantum Mechanics
 
@@ -1144,7 +1176,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 二分搜尋演算法 binary search
 - 點集覆蓋問題 vertex cover problem
 - 歸約 reduction (A歸約到B)
-- NP完備 NP complete
+- NP完全、完備 NP complete
 - 多項式層級 polynomial hierarchy
 - 團問題 clique problem
 - 單調性電路 monotone circuit
@@ -1159,6 +1191,13 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 轉變 transition (TM)
 - 非確定型圖靈機 nondeterminstic turing machine
 - 確定型圖靈機 determinstic turing machine
+- NP難性質 NP hardness
+- NP難的 NP hard
+- 至多按n^c增長 to grow at most n^c rate
+- 類NP class NP
+- 運行時間 running time
+- 位串 string
+- 隱式 implicit
 
 ## 密碼學
 
