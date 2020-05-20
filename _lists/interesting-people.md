@@ -2,6 +2,8 @@
 layout: page
 ---
 
+Last updated 20-12-19.
+
 Here is a list of people that I consider to have lived especially interesting lives:
 
 - 宋美齡 (Song Meiling) (1897 or 1898 - 2003)

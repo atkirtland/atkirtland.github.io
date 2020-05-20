@@ -2,6 +2,8 @@
 layout: page
 ---
 
+Last modified: 20-12-19.
+
 ## Jekyll
 
 - It seems like `pages` is a protected word for a collection, so I had to call my collection something else like `lists` and then insert this into a `pages` subdirectory

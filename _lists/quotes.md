@@ -2,6 +2,8 @@
 layout: page
 ---
 
+Last modified: 20-12-19.
+
 Here's a collection of goofy, pretty <a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BA%8C%E7%97%85">中二</a> quotes I had going for a while.
 
 I just put whitespace-formatted quotes, like poems, in a code block to preserve whitespace.

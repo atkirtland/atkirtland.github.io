@@ -415,6 +415,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 滿射 surjective
 - 蓋射 surjective
 - 雙射 bijection
+- 一一對應 one-to-one correspondence
 - 對應於 corresponds to
 - 對應域/陪域/上域/目標集合 codomain
 - 值域 image/range
@@ -542,8 +543,13 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 - 銳角 acute angle
 
+## 化學 chemistry
+
+- 同位素 isotope
+
 ## 物理 Physics
 
+- 超臨界反應堆 supercritical reactor
 - 加速度 acceleration
 - 冰點 freezing point
 - 正極 positive pole
@@ -556,7 +562,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 路徑無關 irrespective of path / depends only on endpoints
 - 純量場 scalar field
 
-## 計算機 Computers
+## 計算機 computers
 
 - 處理器 processor
 - 前饋神經網絡 
@@ -566,6 +572,12 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 晶片設計 IC integrated circuit design
 - 去中心化 decentralization
 - 輸出 output
+- 反相 NOT
+- 按位元或 OR
+- 按位元互斥或 XOR
+- 按位元與 AND
+- 邏輯移位 logical shift
+- 遮罩 mask
 
 ## 機率ｏｒ概率和統計
 
@@ -588,9 +600,11 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 博弈論 game theory
 - 指示函數 indicator function
 - 期望值 expected value
+- 信賴區間 confidence interval
 
 ## 抽象代數 abstract algebra
 
+- 幺半群 monoid
 - 定義良好 well-defined 
 - 二元運算 binary operation
 - 單位元素 unit element
@@ -627,6 +641,7 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 模 module
 - 環上的模 module over a ring
 - 羣表示論 group representation theory
+- 群的展示 presentation of a group
 
 ## Calculus
 
@@ -829,6 +844,9 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 
 ## 複分析 complex analysis
 
+- 反射原理 reflection principle
+- 分式線性變換 fractional linear transformation
+- 分支切割 branch cut
 - 複數平面 complex plane
 - 黎曼球面 Reimann sphere
 - 複射影直線 complex projective line
@@ -1208,3 +1226,17 @@ In particular, there are good sites for vocabulary up to about linear algebra, b
 - 公開金鑰認證 public key certificate
 - 密碼學安全偽亂數生成器 cryptographic pseudorandom number generator
 - 數位簽章 digital signature
+
+## 紐結理論 knot theory
+
+- 三葉結 trefoil knot
+- 平凡紐結 unknot
+- 同痕 isotopy
+- 環境同痕 ambient isotopy
+- 連通和 connected sum
+- 素紐結 prime knot
+- 辮子 braid
+- 三葉結 trefoil
+- 鏡像 mirror image
+- 平結 square knot
+- 盤長結 endless knot (buddhist knot)
