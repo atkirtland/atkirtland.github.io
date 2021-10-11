@@ -1,5 +1,5 @@
 ---
-title: "Men in Some Water"
+title: "Some Water and Men"
 category: puzzles
 ---
 
