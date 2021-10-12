@@ -1,8 +1,11 @@
 ---
-layout: page
+categories: Chinese
+tags: en
 ---
 
 Last modified: 10-5-20.
+
+Here are a few Chinese characters that appear to have similar meanings:
 
 - 了和瞭
 - 盡和儘

@@ -18,12 +18,16 @@
   <h1>
     For All K
   </h1>
+  <h3>
+    By Tags
+  </h3>
 
   <ul>
   {% assign sortedtags = site.tags | sort %}
   {% for tag in sortedtags %}
   {% assign tagname = tag | first %}
-  <li><a href="#{{ tagname | slugify }}">{{ tagname }}</a>
+  <!--<li><a href="#{{ tagname | slugify }}">{{ tagname }}</a>-->
+  <li>{{ tagname }}
   <ul>
     {% assign sortedposts = site.tags[tagname] | sort %}
     {% for post in sortedposts %}

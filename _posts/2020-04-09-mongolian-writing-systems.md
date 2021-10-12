@@ -1,4 +1,6 @@
 ---
+categories: Misc
+tags: en
 ---
 
 This is a quick note based on a few conversations I had with people.

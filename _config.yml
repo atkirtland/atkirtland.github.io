@@ -3,6 +3,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title:output_ext
 comments:
   provider: disqus
 collections:
@@ -21,3 +22,5 @@ defaults:
 disqus:
   shortname: atkirtland
 github: [metadata]
+feed:
+  path: /blog/feed.xml
