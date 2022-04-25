@@ -1,15 +1,13 @@
---
+---
 category: Misc
 title: 防疫旅館經驗
 tags: zh
-published: false
+published: true
 ---
 
-王朝大酒館
-
-- japanese buddhist book
-- english/chinese bible
-- 14 teas, 14 coffees, 14 stir sticks, 14 sugars, 14 creamers
+我從2021年11月6日到11月21日住在王朝大酒館了。
+我的房間有一本日文佛經、一本中英雙語聖經、14個茶包、14個雀巢速溶、14個攪拌棒、14個糖包和14個奶精。
+這是我前幾天吃的素食。
 
 ## 6日
 
@@ -126,3 +124,17 @@ published: false
 
 - 左上角：海鮮菇
 
+## 13日
+
+<img src="/assets/img/geli-7zao.jpg" width=500>
+
+
+<img src="/assets/img/geli-7wu.jpg" width=500>
+
+<img src="/assets/img/geli-7wan.jpg" width=500>
+
+## 14日
+
+<img src="/assets/img/geli-8zao.jpg" width=500>
+
+<img src="/assets/img/geli-8wu.jpg" width=500>
