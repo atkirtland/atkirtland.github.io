@@ -1,9 +1,8 @@
 ---
 categories: Chinese
 tags: en
+last_modified_at: 2020-10-05
 ---
-
-Last modified: 10-5-20.
 
 Here are a few Chinese characters that appear to have similar meanings:
 

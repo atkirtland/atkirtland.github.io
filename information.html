@@ -1,0 +1,157 @@
+---
+lang: en
+---
+
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+<head>
+  <title>Aaron Kirtland</title>
+</head>
+
+<body>
+  <header>
+    {% include menu.html %}
+  </header>
+  <h1>
+  Aaron Kirtland
+  </h1>
+
+  This page is meant to provide information not included in my CV such as presentation PDFs and project links.
+  It may be outdated at times.
+
+
+  <!--
+  <h2>
+    Teaching Assistant / Grading Experiences
+  </h2>
+  <ul>
+    <li>Spring 2021: TA for Analysis of Algorithms</li>
+    <li>Spring 2020: Grader for Topology 2</li>
+    <li>Fall 2019: Grader for Intro to Analysis, Graph Theory</li>
+    <li>Spring 2019: TA for <a href="https://classes.engineering.wustl.edu/cse541t/">Advanced Algoritms</a></li>
+    <li>Fall 2019: TA for <a href="https://classes.engineering.wustl.edu/cse347/web/">Analysis of Algorithms</a></li>
+  </ul>
+
+  <h2>
+    Research
+  </h2>
+  <ul>
+    <li>Summer 2020: <a href="https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips-2020/">RIPS</a> with IPAM</li>
+    <li>Summer 2019: <a href="https://math.boisestate.edu/reu/">CAD REU</a> at Boise State University</li>
+    <li>Spring 2019: Reading course in quantum geometry with the <a href="https://math.wustl.edu/undergraduate-research">Freiwald scholars program</a></li>
+    <li>Summer 2017: NSF-IRES grant at Changwon National University</li>
+    <li>Summer 2016: UAV swarms with Dr. Adrian Lauf at the University of Louisville</li>
+  </ul>
+
+  <h2>
+    Clubs
+  </h2>
+  <ul>
+    <li>Fa19-Sp21: President of WashU Chinese Table 中文桌子</li>
+    <li>Fa18-Sp19: President of WashU ACM</li>
+    <li>Fa17-Sp18: Assistant Logistics Director for Take Steps for Kids 5k and 1 mile run</li>
+    <li>Eagle Scout</li>
+  </ul>
+  -->
+
+
+  <h2>
+    Engineering
+  </h2>
+
+  <h3>Coding Projects</h3>
+  <ul>
+    {% include project.html link="https://github.com/atkirtland/safetrek-dialogflow" title="Emergency Assistant" tags="[Node.js][Dialogflow]" description="Google Assistant app implementing SafeTrek's emergency API." %}
+    {% include project.html link="https://github.com/jamesylgan/szechuantech" title='<a href="https://devpost.com/software/szechuantech">SzechuanTech RoboAdvisor</a>' tags="[Node.js][Azure][Python]" description="Microsoft chatbot using Blackrock's Aladdin" %}
+    {% include project.html link="https://github.com/atkirtland/mathematica-pacman" title="Mathematica Pacman" tags="[Mathematica]" description="a clone of Pac-Man in Mathematica" %}
+    {% include project.html link="https://github.com/atkirtland/tile-launcher" title="Tile Launcher" tags="[Android][Java]" description="Launcher where icon size changes with usage frequency" %}
+    {% include project.html link="https://github.com/atkirtland/handwriting-practice-app" title="Character Practice Whiteboard" tags="[Android][Java]" description="practice writing in languages with logograms like Chinese" %}
+    {% include project.html link="https://github.com/atkirtland/harry-potter-alexa-skill" title="Characters for Harry Potter" tags="[Alexa]" description="speaks a Harry Potter character's summary given their name" %}
+  </ul>
+
+  <h3>Websites</h3>
+  <ul>
+    {% include project.html link="https://github.com/atkirtland/wku-ppy" title="<a href='https://atkirtland.github.io/wku-ppy/'>WKU Project Pengyou Chapter</a>" tags="[HTML][Jekyll]" description="" %}
+    {% include project.html link="https://github.com/atkirtland/jide-life" title="<a href='https://atkirtland.github.io/jide-life/'>Jide Life</a>" tags="[Node.js][three.js]" description="Remember your past experiences in VR through Spotify, Facebook, and the NYT. For Alzheimer's." %}
+    {% include project.html link="https://github.com/atkirtland/poc-site" title="<a href='https://atkirtland.github.io/poc-site/'>Point of Contact Genetic Screening</a>" tags="[HTML][Jekyll]" description="Website for company aiming to produce a new genetic engineering device." %}
+  </ul>
+  <footer>
+    {% include footer.html %}
+  </footer>
+</body>
+
+  <h2>
+    Hobbies and Interests
+  </h2>
+  <ul>
+    <li>Mandarin Chinese</li>
+    <li>Hiking and other outdoor activities (<a href="https://www.inaturalist.org/people/atkirtland">iNaturalist</a>, <a href="https://www.geocaching.com/p/default.aspx?guid=9ddedc69-c848-4820-897d-0461f0f3a731">Geocaching</a>)</li>
+      <!--<li>Classical Guitar</li>-->
+      <li><a href="https://www.goodreads.com/user/show/72594721-aaron">Reading</a> and <a href="https://en.wikipedia.org/wiki/User:Atkirtland">Wikipedia</a></li>
+      <li>Puzzles</li>
+    <!--
+    <li><a href="https://www.youtube.com/watch?v=8ytIveHX9p4&list=LLiEYg9AwH02zBI3llEsD5HQ&index=3&t=0s">A</a> <a href="https://www.youtube.com/watch?v=7Sx8M6eExTA">couple</a> of YouTube <a href="https://www.youtube.com/watch?v=Xb7vkvq8Eys">videos</a> <a href="https://www.youtube.com/user/GandalfTheGreyTV/featured">back</a> in high school.</li>
+    -->
+  </ul>
+
+
+  <h2>
+    Education
+  </h2>
+  <ul>
+    <li>National Taiwan University Chinese Language Division
+      <ul>
+        <li>Winter 2021-2022 [<a href="/assets/file/cld-sanguo.pdf">Three Kingdoms Presentation</a>][<a href="/assets/file/cld-puzzles.pdf">Puzzles Presentation</a>]
+        </li>
+      </ul>
+    <li>College: <a href="https://wustl.edu/">Washington University in St. Louis</a>, Math+CS, Chinese 2021
+      <ul>
+        <li>2020-2021
+          <ul>
+            <li>Nonlinear Dynamical Systems (Khalil)</li>
+            <li>Special Topics in Systems & Control (focus on geometric and stochastic control) <br>
+              [Final Project <a href="/assets/file/ese559-presentation.pdf">Presentation</a> and <a href="/assets/file/ese559-report.pdf">Report</a>]</li>
+            <li>Simulation in Chemistry and Biochemistry (Leach)</li>
+            <li>Algorithms for Computational Biology</li>
+            <li>Partial Differential Equations (Salsa)</li>
+            <li>Linear Dynamical Systems</li>
+            <li>Time Series Analysis (Shumway and Stoffer)</li>
+            <li>Classical Chinese II<br>[Final <a href="/assets/file/chinese411-presentation.pdf">Presentation</a>]</li>
+          </ul>
+        </li>
+        <li>2019-2020
+          <ul>
+            <li>Computational Complexity Theory independent study (roughly following <a href="https://www.cse.wustl.edu/~bjuba/cse582/f14/">this</a> schedule, using Arora Barak and Jukna)</li>
+            <li>Differential Topology (Lee)<br>[Final <a href="/assets/file/math5046-presentation.pdf">Presentation</a>]</li>
+            <li>Algebraic Topology (<a href="http://pi.math.cornell.edu/~hatcher/AT/ATpage.html">Hatcher</a>)</li>
+            <li>Complex Analysis <a href="https://www.math.wustl.edu/~xtang/Fall2019-complex.html">I</a>, <a href="https://www.math.wustl.edu/~xtang/spring2020-complex.html">II</a> (Ahlfors)</li>
+            <li>Stochastic Differential Equations (Evans)</li>
+          </ul>
+        </li>
+        <li>2018-2019
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1ZeCDC_zpEsvKzCl9K2c2ZAhwXlnqMtJ5EZVzWWXFLrQ/edit">Topology I</a> (Munkres)</li>
+            <li>Analysis I (Apostol), <a href="https://www.math.wustl.edu/~yasha/teaching/2019s/lebesgue/">II</a></li>
+            <li>Abstract Algebra (Fraleigh)</li>
+            <li><a href="https://www.math.wustl.edu/~chi/math429.html">Linear Algebra</a> (Hoffman and Kunze)</li>
+            <li><a href="https://www.math.wustl.edu/~likai/math494.html">Statistics</a> (Hogg)</li>
+            <li><a href="https://www.cse.wustl.edu/~sanmay/teaching/cse417-spring19/">Machine Learning</a> (LFD)</li>
+          </ul>
+        </li>
+        <li>2017-2018
+          <ul>
+            <li><a href="https://research.engineering.wustl.edu/~baruah/TEACHING/2018-1Sp/">Advanced Algorithms</a> (CLRS)</li>
+            <li><a href="https://www.cse.wustl.edu/~taoju/cse546/">Computational Geometry</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>High School: <a href="https://www.wku.edu/academy/">Gatton Academy</a></li>
+  </ul>
+
+Last updated: 2021-10-11
+
+</html>

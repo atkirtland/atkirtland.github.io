@@ -1,9 +1,8 @@
 ---
 categories: Misc
 tags: en
+last_modified_at: 2020-12-19
 ---
-
-Last updated 20-12-19.
 
 Here are two people that appear to have lived especially interesting lives:
 

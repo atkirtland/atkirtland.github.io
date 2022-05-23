@@ -1,9 +1,8 @@
 ---
 categories: Chinese
 tags: en
+last_modified_at: 2020-05-20
 ---
-
-Last updated: 2020-05-20
 
 I couldn't find many good sites that list English and Chinese math vocabulary translations.
 In particular, there are good sites for vocabulary up to about linear algebra, but from real analysis on there isn't much. 
