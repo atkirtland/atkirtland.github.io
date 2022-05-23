@@ -1,6 +1,6 @@
 ---
 categories: Math
-title: Word Game 文字遊戲 Locks Puzzle
+title: Word Game（文字遊戲）Locks Puzzle Analysis
 tags: en
 ---
 

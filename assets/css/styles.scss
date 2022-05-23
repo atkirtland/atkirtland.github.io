@@ -4,6 +4,8 @@
 @import "normalize";
 @import "main";
 
+@import "bigfoot";
+
 .conjecture, .corollary, .definition, .example, .proof, .question, .theorem {
   display: block;
   font-style: normal;
@@ -55,3 +57,5 @@ body {
 .menu li a:hover {
   background-color: #111;
 }
+
+

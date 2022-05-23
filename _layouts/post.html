@@ -22,7 +22,16 @@
 	</header>
 		<article>
 			<h1>{{ page.title }}</h1>
-			<h3>{{ page.date | date_to_string }}</h3>
+			<h3>Published: {{ page.date | date_to_string }}</h3>
+
+                        {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
+                        {%- if page.last_modified_at -%}
+                        <!--<h3>Last updated: {{ page.last_modified_at | date: date_format }}</h3>-->
+                        <h3>Last updated: {{ page.last_modified_at | date_to_string }}</h3>
+                        {%- else -%}
+                        <h3>Last updated: {{ page.date | date_to_string }}</h3>
+                        {%- endif -%}
+
                         Categories
                         <ul>
                           {% for category in page.categories %}

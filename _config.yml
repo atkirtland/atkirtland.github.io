@@ -3,7 +3,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title:output_ext
+#permalink: /blog/:year/:month/:day/:title:output_ext
+permalink: /blog/:title:output_ext
 comments:
   provider: disqus
 collections:

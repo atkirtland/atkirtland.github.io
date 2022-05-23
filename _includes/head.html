@@ -3,6 +3,26 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
   <script src="/assets/js/site.js"></script>
 
+  <!-- Bigfoot -->
+  <script type="text/javascript" src="/assets/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bigfoot.js"></script>
+  <script type="text/javascript">
+      $.bigfoot({
+        positionContent: true,
+        // https://esham.io/2014/07/mathjax-and-bigfoot
+        activateCallback: function($popover, $button) {
+          if (MathJax && !$button.data('mathjax-processed')) {
+              var content_wrapper = $popover.find('.bigfoot-footnote__content')[0];
+              MathJax.Hub.Queue(['Typeset', MathJax.Hub, content_wrapper]);
+              MathJax.Hub.Queue(function () {
+                  $button.attr('data-bigfoot-footnote', content_wrapper.innerHTML);
+                  $button.data('mathjax-processed', true);
+              });
+          }
+      }
+      });
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5VSFN5T32"></script>
   <script>
