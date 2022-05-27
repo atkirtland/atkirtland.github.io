@@ -74,7 +74,7 @@ Suppresses Shanyue[^3],\
 Expels powerful armies[^4]\
 and extinguishes hatred and vengence
 
-[^3]: [山越](https://en.wikipedia.org/wiki/Shanyue)
+[^3]: [Shanyue](https://en.wikipedia.org/wiki/Shanyue)（山越）
 [^4]: 金戈鐵馬 is an idiom meaning powerful armies
 
 [紫][發][髯] [碧色][眼眸]\
@@ -297,7 +297,7 @@ ending his life.
 On the railing he leans,\
 harshly looking at Wugou[^23].
 
-[^23]: [吳鉤](https://baike.baidu.hk/item/%E5%90%B3%E9%88%8E/70874)
+[^23]: Wugou（[吳鉤](https://baike.baidu.hk/item/%E5%90%B3%E9%88%8E/70874)）
 
 [嘆][亂][世] [幾時][了] [天下][歸][一][統] [沒][其咎]\
 [to sigh][chaotic][world] [some time][pass] [sky beneath][return][one][rule] [has not][self blame]\
@@ -337,7 +337,7 @@ officers and soldiers assembly and happily drink,\
 appreciating the Konghou[^25].
 
 [^31]: I'm not sure what he's looking for.
-[^25]: [箜篌](https://en.wikipedia.org/wiki/Konghou)
+[^25]: [Konghou](https://en.wikipedia.org/wiki/Konghou)（箜篌）
 
 運帷幄 英雄幾拂袖\
 陰謀 陽謀 明仇 暗鬥\
@@ -434,3 +434,4 @@ I know of three other knockoff songs, 操戈天下、備量天下 and 瑜弈天�
 - I referenced another translation in the comments [here](https://www.youtube.com/watch?v=LJms1CGHjn8)
 - The first comment on [this](https://www.zhihu.com/question/30382413) link explains the historical parts of the song. I translated some of it and added it to the footnotes.
 
+## Footnotes 
