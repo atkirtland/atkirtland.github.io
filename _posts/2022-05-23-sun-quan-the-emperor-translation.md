@@ -7,9 +7,9 @@ last_modified_at: 2022-05-23
 
 ## Introduction
 
-I really love the Three Kingdoms, so my goals with this post are to 1) write a translation that is better than the other ones out there, and 2) provide links or explain the necessary background to understand the song.
-The translations I've seen seem to be rather hard to read because they translate more or less directly from the Chinese without adding connections or changing the tense, and I hope this translation sounds more natural.
-I'll probably update it occasionally.
+I really love the Three Kingdoms, and I have two goals for this post. 
+1. Write a translation that is better than the other ones out there. This translation isn't good, but it still sounds better than the others in my opinion.
+2. Explain or link to the relevant background information to understand the song. 
 
 If you can read Chinese, please read the Chinese versions of the provided Wikipedia articles.
 They usually have significantly more information!
