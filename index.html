@@ -1,48 +1,150 @@
----
-lang: en
----
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
-<!DOCTYPE html>
-<html>
-
-{% include head.html %}
-<head>
   <title>Aaron Kirtland</title>
+  
+  <meta name="author" content="Jon Barron">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
-  <header>
-    {% include menu.html %}
-    {% include zh-button.html %}
-  </header>
-  <h1>
-  Aaron Kirtland
-  </h1>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Aaron Kirtland</name>
+              </p>
 
+              <p>
+                I am a first year PhD student in applied math at Brown University researching reinforcement learning.
+                I am also interested in learning about computational cognitive science and computational neuroscience.
+              </p>
 
-<figure style="text-align: center;">
-  <img src="/assets/img/crater-lake.jpg" style="max-width:50%;height:auto;">
-  <figcaption>Crater Lake on the PCT, 2021</figcaption>
-</figure>
+              <p>
+                I graduated in 2021 from Washington University in St. Louis, where I studied math, computer science, and Chinese. I then took a gap year, during which I solo thru-hiked the Pacific Crest Trail and studied in Taiwan. Feel free to reach out if you would like to chat!
+              </p>
+              
+              <p style="text-align:center">
+                <a href=blog/>Blog</a> &nbsp/&nbsp
+                <a href="https://drive.google.com/file/d/1s8EjzPooE9aH1dTXudE_rUFZWU-w85nW/view?usp=sharing">CV</a>
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:atkirtland@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="https://github.com/atkirtland/">Github</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=cHUOkpkAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/atkirtland">Twitter</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="assets/img/me.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/img/me.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table> -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="assets/img/mesh.png" alt="mesh" width="160" height="120" style="border-style: none">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://arxiv.org/abs/2209.05944">
+                  <papertitle>An Unstructured Mesh Approach to Nonlinear Noise Reduction for Coupled Systems</papertitle>
+                </a>
+                <br>
+                <strong>Aaron Kirtland</strong>, Jonah Botvinick-Greenhouse, Marianne DeBrito, Megan Osborne, Casey Johnson, Robert S. Martin, Samuel J. Araki, Daniel Q. Eckhardt
+                <!-- <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <a href="http://imatge.upc.edu/web/people/jordi-pont-tuset">Jordi Pont-Tuset</a>, <strong>Jonathan T. Barron</strong>, <a href="http://imatge.upc.edu/web/ferran">Ferran Marqu&eacutes</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> -->
+                <br>
+                <em>Submitted to SIAM Journal on Applied Dynamical Systems</em>, 2022
+                <br>
+                <!-- <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/">project page</a> /
+                <a href="data/ArbelaezCVPR2014.bib">bibtex</a>
+                <p>This paper is subsumed by <a href="#MCG_journal">our journal paper</a>.</p> -->
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="assets/img/smearing.jpg" alt="" width="160" height="120" style="border-style: none">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://www.degruyter.com/document/doi/10.1515/jmc-2020-0035/html?lang=en">
+                  <papertitle>The polynomial learning with errors problem and the smearing condition</papertitle>
+                </a>
+                <br>
+                Liljana Babinkostova*, Ariana Chin*, <strong>Aaron Kirtland</strong>*, Vladyslav Nazarchuk*, Esther Plotnick*
+                <br>
+                <em>Journal of Mathematical Cryptology</em>, 2022
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="assets/img/spectral.png" alt="" width="160" height="120" style="border-style: none">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://arxiv.org/abs/2007.13189">
+                  <papertitle>The Ring Learning with Errors Problem: Spectral Distortion</papertitle>
+                </a>
+                <br>
+                Liljana Babinkostova*, Ariana Chin*, <strong>Aaron Kirtland</strong>*, Vladyslav Nazarchuk*, Esther Plotnick*
+                <br>
+                <em>Accepted with minor revisions to Involve, A Journal of Mathematics</em>, 2022
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="assets/img/pad.png" alt="" width="160" height="120" style="border-style: none">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://iopscience.iop.org/article/10.1088/1361-6528/aab229">
+                  <papertitle>Preparing cuprous oxide nanomaterials by electrochemical method for non-enzymatic glucose biosensor</papertitle>
+                </a>
+                <br>
+                Thu-Thuy Nguyen, Bui The Huy, Seo-Young Hwang, Nguyen Minh Vuong, Quoc-Thai Pham, Nguyen Ngoc Nghia, <strong>Aaron Kirtland</strong>, and Yong-Ill Lee
+                <br>
+                <em>Nanotechnology</em>, 2018
+                <br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
 
-
-I am a 2021 graduate of Washington University in St. Louis, where I studied math, computer science, and Mandarin. 
-In 2021-2022, I am hiking the PCT, applying to applied math PhD programs, and studying in Taiwan.
-
-Feel free to reach out over email if you would like to chat:
-
-  <ul>
-    <li>atkirtland at gmail dot com</li>
-    <li><a href="https://www.linkedin.com/in/aaronkirtland/">LinkedIn</a></li>
-    <li><a href="https://github.com/atkirtland">GitHub</a></li>
-    <li><a href="https://scholar.google.com/citations?user=cHUOkpkAAAAJ&hl=en">Google Scholar</a></li>
-  </ul>
-  <footer>
-    {% include footer.html %}
-  </footer>
+        <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+            <tbody><tr>
+              <td>
+                <br>
+                <p align="center">
+                  <a href="information.html">Here</a> is some more info about me...
+                  <br>
+                  <font size="2">
+                    Template from <a href="https://github.com/jonbarron/jonbarron_website">here.</a>
+                  </font>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
-
-Last updated: 2021-10-11
 
 </html>
