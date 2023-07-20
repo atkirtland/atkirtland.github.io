@@ -1,0 +1,53 @@
+---
+---
+
+
+<!DOCTYPE html>
+<html>
+
+
+{% include head.html %}
+
+<head>
+    <title>For All K</title>
+</head>
+
+
+<style>
+    body {
+        margin: 0 0 0 0;
+        word-wrap: break-word;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; /* This is the aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
+
+<body>
+    <header>
+        {% include menu.html %}
+        {% include blogmenu.html %}
+    </header>
+
+
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1nzqPQ_8bYcUV7beYkmhet_LAejZuJmI&ehbc=2E312F"
+            width="640" height="480"></iframe>
+    </div>
+
+</body>
+
+</html>

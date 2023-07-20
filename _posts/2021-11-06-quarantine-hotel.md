@@ -2,7 +2,7 @@
 category: Misc
 title: 防疫旅館經驗
 tags: zh
-published: true
+published: false
 ---
 
 我從2021年11月6日到11月21日住在王朝大酒館了。

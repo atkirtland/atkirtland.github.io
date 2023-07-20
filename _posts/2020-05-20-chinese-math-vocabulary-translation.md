@@ -2,6 +2,7 @@
 categories: Chinese
 tags: en
 last_modified_at: 2020-05-20
+published: false
 ---
 
 I couldn't find many good sites that list English and Chinese math vocabulary translations.
