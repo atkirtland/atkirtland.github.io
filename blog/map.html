@@ -77,7 +77,6 @@
                     <button id="carto">CARTO</button>
                     <button id="esri">Esri</button>
                     <button id="usgs">USGS</button>
-                    <button id="maptilesapi">MapTiles API</button>
                 </div>
             </div>
         </div>
@@ -90,6 +89,7 @@
 
         var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
 
         var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
@@ -112,13 +112,6 @@
             attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
         });
 
-        var maptilesapi = L.tileLayer('https://maptiles.p.rapidapi.com/en/map/v1/{z}/{x}/{y}.png?rapidapi-key={apikey}', {
-            attribution: '&copy; <a href="http://www.maptilesapi.com/">MapTiles API</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            apikey: '67e1b6c8f6mshaa41368876c909ep10dcdbjsn42dc7a47762a',
-            maxZoom: 19
-        });
-
-
         map.addLayer(openTopoMap);
 
 
@@ -137,9 +130,6 @@
             }
             if (map.hasLayer(usgs)) {
                 map.removeLayer(usgs);
-            }
-            if (map.hasLayer(maptilesapi)) {
-                map.removeLayer(maptilesapi);
             }
             map.addLayer(layer);
         }
@@ -162,10 +152,6 @@
 
         document.getElementById('usgs').addEventListener('click', function () {
             switchBaseLayer(usgs);
-        });
-
-        document.getElementById('maptilesapi').addEventListener('click', function () {
-            switchBaseLayer(maptilesapi);
         });
 
     </script>
