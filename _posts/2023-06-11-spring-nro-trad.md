@@ -1,0 +1,136 @@
+---
+category: Outdoors
+tags: zh
+title: 春季NRO探洞穴活動
+last_modified_at: 2023-08-21
+lat: 42.822894172069994 
+lon: -74.1543094895431
+published: true
+---
+
+<style>
+table {
+  width: 100% ;
+}
+img {
+  width: 100%;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+</style>
+
+{% assign filename_parts = page.path | split: "/" %}
+{% assign filename = filename_parts[-1] | remove: ".md" %}
+{% assign base_path = "/assets/img/" | append: filename | append: "/" %}
+
+我很久以來想參加波士頓Grotto，可是我六月初才有汽車可以帶我去！在會議的一部分他們有新澤西的洞穴救援隊的領導人來分享洞穴救援的過程，然後人們討論了自己最近享受的探洞穴旅行和未來的旅行。看來我來得正是時候，下個星期他們打算去春季NRO（美國國家洞穴學會東北區域組織，Northeastern Regional Organization of the National Speleological Society）！每年新英格蘭有兩次的NRO，各在不同的地方，各有專家帶人探索地下自然環境。他們有多餘的裝備可以借給人用，所以我借了安全帽一同報名去。
+
+## 星期六
+
+我早上4點從普羅維登斯出發開車3小時，上午7:15到了Indian Lookout Country Club在Pattersonville紐約州。我先停了車去報名站，然後到後面的穀倉裡報名洞穴旅行。我在那邊遇到了一位老先生給我推薦一些適合初級和中級探險者的洞穴，包括Clarksville、Schoharie和Onesquethaw。雖然它們都是適合初級者探險的，不過Onesquethaw有比較艱難一點的踩水的部分。我選了兩全其美的Clarksville和Schoharie旅行，接著找到波士頓Grotto的人借安全帽準備走。
+
+| | |
+| ![Schoharie地圖]({{ base_path }}IMG_20230610_075736561.jpg) | ![Clarksville地圖]({{ base_path }}IMG_20230610_075759019.jpg) |
+
+我九點到了報名站準備走。領導問了每一個人有沒有必要的裝備，然後我們分爲幾羣人一起搭車。我跟領導Ken和另外一個人Carl一起走了。Carl有了兩套洞穴探險服，而且他非常友善地借給我一套！他們倆都住在佛蒙特，而且經常一起見面探洞穴或者在佛蒙特Grotto會議碰面。他們也每年至少一次去West Virginia，參加為期一週的活動，半是派對，半是探洞穴的活動稱為OTR（Old Timer's Retreat）。
+
+要到第一個洞穴，首先得在彎彎曲曲的鄉村道路上開車。目的地有個小木屋可供夜宿。NSS買洞穴附近的土地時，建立了這個小木屋作為很多探洞穴者的總部。很多人會待在那裡過夜，然後早起去下一天的洞穴。
+
+洞穴裡面很簡單，只有一條直線的結構。整個過程中，腳下都有水。美國東北部的洞穴與肯塔基州的不同之處在於東部的冷得多了。肯塔基州洞穴的平均溫度54左右，但是東部的洞穴更冷5到10度。
+
+| | |
+| ![在洞穴的兩側保持平衡，PC：Craig]({{ base_path }}351450474_700656241823884_7271052207747464176_n.jpg) | ![居高望遠，PC：Craig]({{ base_path }}353693989_5819481334825266_5191969006995805895_n.jpg) | ![熱像儀照片，PC：Craig]({{ base_path }}351618421_3721475564805288_2671673198771000009_n.jpg) |
+
+![合照，PC：Craig]({{ base_path }}353581645_213154408264160_978288610293030182_n.jpg) | 
+
+在洞穴的某些部分可以在兩側攀爬，不過大部分時間都不得不踩水，直到腳都麻木了。終點是個水坑（sump，[別人](http://ccrtw.blogspot.com/2014/03/ccr-bill-stone.html)也在求中文翻譯），有一個土丘可以攀爬。向導說水坑以後的洞穴的長度跟我們走過的一樣，而且以前有人通過抽水坑探險洞穴的其餘部分，可是因為有所意外，所以現在人不去了。這是我們團隊的很多人第一次探洞穴，所以我們在那裡關了頭燈，等了好一會兒享受那種什麼也看不到的黑暗和神秘。回程的路上沒有什麼特別有趣的事情發生，但是我發現Craig有個很酷的、很專業的手機（[AGM Pro 2](https://www.agmmobile.com/products/agm-g2-pro)）：他會拍熱圖像和紅外圖像！他的手機很重，包括外殼在內，也有很長的電池續航時間。
+
+離開洞穴時我聽到我們小組的一個人說他也是聖路易斯華盛頓大學的校友，而且他讀書的時候（30年前。。）經常跟戶外活動俱樂部一起探洞穴。我念大學的時候戶外活動俱樂部沒有那麼冒險的，他們比較喜歡小規模活動。他現在當植物學家，我覺得這樣的愛好相當合適。
+
+| | |
+| ![Schoharie出入口1]({{ base_path }}IMG_20230610_132717911.jpg) | ![也在Schoharie的洞穴測量課參加者]({{ base_path }}IMG_20230610_143212994.jpg) |
+
+此後我們一起去週六的第二個洞穴Schoharie。Schoharie更像我去過的肯塔基州洞穴。它很大，一共有3個出入口。我們從最大的入口走到了終點，然後掉頭回到交叉點尋找另一條前往第三個入口的路。我和Craig一起探險另一條路，發現一陣風吹著透露第二個入口的位置。找到第三個入口需爬很長時間。我們最終遇到了水逐漸升漲的，流石（flowstone）非常美麗的部分；在最深的地方水到人的脖子，而且這個部分正好是岩石懸崖遮擋住對下個房間的視線。探過這洞穴的人想這大概是第三入口所在的地方，可是因為他們上次去是很長以前的事，而且我們這群人能力各異，所以我們決定回到第一入口。事實上，我覺得連踩水到腰的部分也對第一次探洞穴的人有點過度。
+
+| | |
+| ![Schoharie出入口3]({{ base_path }}IMG_20230610_155103390.jpg) | ![1839的塗鴉!]({{ base_path }}IMG_20230610_155601360.jpg) |
+
+我們順利回到了第一入口。我們爬出洞穴，然後去第三入口。到第三入口要穿過森林的一部分，直到石頭堆積的地方。洞穴裡面爬行了一段時間後，就到了有滑泥的地方，可以滑進下面的水域。有些不介意自己會弄溼的人都爬了進去。他們說在拐角處有個地方就是我們前一會兒幾乎到達的地方，那裡還有個滑泥坡，被稱為滑梯（slip and slide）。
+
+| | |
+| ![鳶尾花]({{ base_path }}IMG_20230610_183018047.jpg) | ![綠紅東美螈]({{ base_path }}IMG_20230610_184434597.jpg) |
+
+過了一會，我們回到了NRO場所。整天爬洞穴並沒有讓我感到很累，所以我決定開車到附近的Featherstonhaugh State Forest去跑步。裡面有個步道可以跑步，問題是我發現雜草叢生，讓我擔心得到蜱蟲叮咬或者迷路，所以我改到外面的柏油路跑。我找到了美麗的鳶尾花，還看到了幹涸的河床上的綠紅東美螈！
+
+| | |
+| ![拍賣]({{ base_path }}IMG_20230610_193533176.jpg) | ![豐盛的晚餐]({{ base_path }}IMG_20230610_210133540.jpg) |
+
+晚上的時候有個很有趣的拍賣。一個人扮演維京人，拍賣參加者帶來的物品作為NRO的募款活動。大部分的東西有點舊，比如電石燈，而且價格都相當便宜。拍賣結束之後我吃了晚飯，即Knorr附菜，而且我發現烹煮過的食品比冷浸泡（cold soak）食物好吃多了（在走PCT之後，我還沒徒步很多）。
+
+我的朋友Carl把他卡車的後部改裝成了一個房間，也有很多空間可以帶各種各樣的東西。他最喜歡帶的是披薩烤箱，今天他做了好幾個披薩（5個？6個？）給朋友吃。現場的池塘也有個垂直訓練課程稱為The Gauntlet挑戰賽，在這來自歐洲的活動裡，人們可以訓練和展示自己的垂直技能，比如結繩，而且最快的人贏。這個活動持續到夜裡才結束。
+
+## 星期天
+
+星期天早上我去穀倉選那一天的洞穴：Marshalls洞穴。可探長度500英尺左右，Marshalls是最近幾年才發現的洞穴。據說地主之家很長時間以來懷疑田裡有洞穴，而且小孩子常常在洞穴所在的土壤上面玩。
+
+我們的向導正是發掘洞穴的人，Julian！他對自己（與另一個人Stephen）發現的洞穴非常自豪。洞穴有兩個出入口，一個可以水平進入，另一個要垂直進入。洞穴附近不遠幾百英尺也有另外一個很深的洞，下面有水流，可是至今水染色測試顯示兩個洞穴不連通。
+
+| | |
+| ![Marshall's出入口1]({{ base_path }}IMG_20230611_133413063.jpg) | ![Marshall's出入口2]({{ base_path }}IMG_20230611_135014247_HDR.jpg) |
+| ![繩梯]({{ base_path }}IMG_20230611_123451748.jpg) | ![發光岩石]({{ base_path }}IMG_20230611_131748789.jpg) |
+
+我們先從水平出入口進去。第一段部分要爬，過一些碎石堆。我們要小心，免得動亂石把洞頂崩塌。最後我們到了用繩梯可以爬下到第二段的地方。在第二段洞穴變得寬敞，可以用手電筒看幾十英尺處。接下來有幾個在光下閃爍的石頭、一些非常小的隧道通向人還在爆破的區域以找到新的洞穴部分、一個非常深的洞、以及很高的地方稱為鳥巢（The Roost）。可是總的來說，這個洞穴的另外一些特點都很小，也有亂石，我這新手覺得它好像沒有我以前去的洞穴那樣結構穩固。
+
+退去以後，我們都走到旁邊的垂直出入口。我們小組中的好多人都做過垂直訓練，所以他們一一降進洞裡。此後我跟兩個人一起開車回到活動主場地。雖然當時還是早下午，但是大部分的人已經走了；好像很多人只會待一天兩夜。這次的探洞穴像我在肯塔基州的旅行一樣好玩！
+
+回家以後我玩了幾個小時的文字遊戲，贏了！
+
+![文字遊戲]({{ base_path }}螢幕快照 2023-06-11 22-37-12.png)
+
+<script>
+var images = document.getElementsByTagName("img");
+for (var i = 0; i < images.length; i++) {
+    var item = images[i];
+    item.title = item.alt;
+}
+
+// don't display empty td tags
+document.querySelectorAll('td').forEach(function(td) {
+  if (td.innerHTML === '&nbsp;' || td.textContent.trim() === '\xa0') {
+    td.style.display = 'none'; // or 'visibility: collapse;'
+  }
+});
+
+// window.onload = function() {
+function adjustImageSize() {
+  var rows = document.querySelectorAll('table tr');
+
+  rows.forEach(function(row) {
+    var images = row.querySelectorAll('img');
+    if (images.length !== 2) return; // Skip rows that don't have exactly two images
+
+    var img1 = images[0];
+    var img2 = images[1];
+
+    // Identify the smaller and larger images based on natural height
+    var smallerImage = img1.naturalHeight <= img2.naturalHeight ? img1 : img2;
+    var largerImage = img1 === smallerImage ? img2 : img1;
+
+    // Set the smaller image's width to 100%
+    smallerImage.style.width = '100%';
+
+    // Calculate the percentage width for the larger image to match the height
+    var percentageWidth = (smallerImage.naturalHeight / largerImage.naturalHeight) * 100;
+
+    // Set the larger image's width to the calculated percentage
+    largerImage.style.width = percentageWidth + '%';
+  });
+}
+
+// Attach a load event listener to all images on the page
+document.querySelectorAll('img').forEach(function(img) {
+  img.addEventListener('load', adjustImageSize);
+});
+
+</script>
