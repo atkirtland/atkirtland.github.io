@@ -84,6 +84,7 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="/assets/js/leaflet-sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
     <script>
         var map = L.map('map').setView([39.50, -98.35], 4);
 
@@ -112,7 +113,7 @@
             attribution: 'Tiles courtesy of the <a href="https://usgs.gov/">U.S. Geological Survey</a>'
         });
 
-        map.addLayer(openTopoMap);
+        map.addLayer(usgs);
 
 
         function switchBaseLayer(layer) {
@@ -196,6 +197,14 @@
 
             {% endif %}
         {% endfor %}
+
+        var gpx = '/assets/map/pvd-bos.gpx'; // URL to your GPX file or the GPX itself
+        new L.GPX(gpx, {async: true, gpx_options: {parseElements: 'track'}}).on('loaded', function(e) {
+        map.fitBounds(e.target.getBounds());
+        }).addTo(map);
+        // var pvdbpoxroute = L.GPX(gpx);
+        // console.log(pvdbpoxroute);
+        // pvdbpoxroute.addTo(map);
     </script>
 
 
