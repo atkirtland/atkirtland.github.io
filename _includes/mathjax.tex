@@ -1,22 +1,27 @@
+\ifdefined\HCode
+	% we are running tex4ht
+	% don't load the physics package
+  \require{physics}
+	% \require{siunitx}
+\else
+	% we are running LaTeX
+	%   \usepackage{physics}
+\fi
+
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
 \newcommand\define[1]{\textbf{#1}\index{#1}}
 
 % Letters/Font
-\DeclareMathOperator{\F}{\mathbb{F}}
 \DeclareMathOperator{\bF}{\mathbb{F}}
-\DeclareMathOperator{\Q}{\mathbb{Q}}
 \DeclareMathOperator{\bQ}{\mathbb{Q}}
-\DeclareMathOperator{\Z}{\mathbb{Z}}
 \DeclareMathOperator{\bZ}{\mathbb{Z}}
-\DeclareMathOperator{\R}{\mathbb{R}}
 \DeclareMathOperator{\bR}{\mathbb{R}}
-\DeclareMathOperator{\C}{\mathbb{C}}
 \DeclareMathOperator{\bC}{\mathbb{C}}
-\DeclareMathOperator{\E}{\mathbb{E}}
 \DeclareMathOperator{\bE}{\mathbb{E}}
-\DeclareMathOperator{\N}{\mathbb{N}}
 \DeclareMathOperator{\bN}{\mathbb{N}}
-\DeclareMathOperator{\M}{\mathbb{M}}
-\DeclareMathOperator{\mM}{\mathbb{M}}
+\DeclareMathOperator{\bM}{\mathbb{M}}
 \DeclareMathOperator{\bH}{\mathbb{H}}
 \DeclareMathOperator{\bP}{\mathbb{P}}
 
@@ -31,6 +36,8 @@
 \newcommand{\w}[1]{\wedge#1}
 \newcommand\mean[1]{\bar{#1}}
 \newcommand\conj[1]{\bar{#1}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
 
 % Grouping Operators
 \newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
@@ -43,29 +50,48 @@
 \newcommand{\opcl}[1]{\left(#1\right]}
 \newcommand{\angles}[1]{\langle#1\rangle}
 
+\newcommand{\p}[1]{\left(#1\right)}
+% \newcommand{\b}[1]{\left\{#1\right\}}
+\newcommand{\q}[1]{\left[#1\right]}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\n}[1]{\left\lVert#1\right\rVert}
+
+
 % probability
 \DeclareMathOperator{\Cov}{Cov}
 \DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cor}{Cor}
 \DeclareMathOperator{\median}{median}
 % https://tex.stackexchange.com/questions/154530/resolved-a-conditional-independence-symbol-that-looks-good-with-mid
-\newcommand{\indep}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\ind}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
+% or \newcommand{\ind}{\perp\!\!\!\!\perp} 
+% now included in the physics package
+%\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator{\Bias}{Bias}
+\DeclareMathOperator{\Range}{Range}
 
 % linear algebra
-\DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\nullity}{nullity}
 \DeclareMathOperator{\rowrank}{row rank}
 \DeclareMathOperator{\colrank}{column rank}
-\DeclareMathOperator{\tr}{Tr}
-\DeclareMathOperator{\Tr}{Tr}
+% now in the physics package
+% \DeclareMathOperator{\tr}{Tr}
+% \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\perm}{perm}
 \DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
 \DeclareMathOperator{\imm}{imm}
 \DeclareMathOperator{\poly}{poly}
+\DeclareMathOperator{\Lie}{Lie}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\adj}{adj}
 
 % abstract algebra
 \DeclareMathOperator{\Aut}{Aut}
 \DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Id}{Id}
 \DeclareMathOperator{\Inn}{Inn}
 \DeclareMathOperator{\irr}{irr}
 \DeclareMathOperator{\Frac}{Frac}
@@ -81,12 +107,72 @@
 \DeclareMathOperator{\End}{End}
 \DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\im}{im}
-\DeclareMathOperator{\op}{op}
+% \DeclareMathOperator{\Vec}{Vec}
+\DeclareMathOperator{\Rel}{Rel}
+\DeclareMathOperator{\Mon}{Mon}
+\DeclareMathOperator{\Pre}{Pre}
+\DeclareMathOperator{\SRel}{SRel}
+\DeclareMathOperator{\Ab}{Ab}
+\DeclareMathOperator{\Perm}{Perm}
+\DeclareMathOperator{\Nat}{Nat}
+\DeclareMathOperator{\Cat}{Cat}
+% now in physics package
+% \DeclareMathOperator{\op}{op}
+\DeclareMathOperator{\FinStoch}{FinStoch}
+\DeclareMathOperator{\Stoch}{Stoch}
 
 % number theory
 \DeclareMathOperator{\rad}{rad}
 \DeclareMathOperator{\Disc}{Disc}
 \DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\lcm}{lcm}
 
 % differential geometry
 \DeclareMathOperator{\Man}{Man}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\Diff}{Diff}
+\DeclareMathOperator{\VB}{VB}
+
+% complexity theory
+\DeclareMathOperator{\fspace}{FSPACE}
+\DeclareMathOperator{\sspace}{SPACE}
+\DeclareMathOperator{\pspace}{PSPACE}
+
+\DeclareMathOperator{\AR}{AR}
+\DeclareMathOperator{\MA}{MA}
+\DeclareMathOperator{\B}{B}
+\DeclareMathOperator{\ARMA}{ARMA}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\IMA}{IMA}
+\DeclareMathOperator{\ARIMA}{ARIMA}
+\DeclareMathOperator{\Vol}{Vol}
+\DeclareMathOperator{\essup}{essup}
+\DeclareMathOperator{\essinf}{essinf}
+\DeclareMathOperator{\Bernoulli}{Bernoulli}
+\DeclareMathOperator{\Law}{Law}
+\DeclareMathOperator{\Normal}{Normal}
+\DeclareMathOperator{\Geometric}{Geometric}
+\DeclareMathOperator{\Poisson}{Poisson}
+\DeclareMathOperator{\Uniform}{Uniform}
+\DeclareMathOperator{\Beta}{Beta}
+\DeclareMathOperator{\TV}{TV}
+\DeclareMathOperator{\io}{i.o.}
+\DeclareMathOperator{\ale}{a.e.}
+\DeclareMathOperator{\as}{a.s.}
+\DeclareMathOperator{\iid}{i.i.d.}
+
+% least fixed point
+\DeclareMathOperator{\lfp}{lfp}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\pval}{p.v.}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\Ran}{Ran}
+\DeclareMathOperator{\Hol}{Hol}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\Pol}{Pol}
+\DeclareMathOperator{\sinc}{sinc}
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\Pr}{\mathbb{P}}
+\DeclareMathOperator{\R}{\mathbb{R}}

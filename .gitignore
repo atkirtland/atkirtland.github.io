@@ -8,3 +8,6 @@ tex/*.log
 tex/*.out
 tex/*.gz
 tex/*.toc
+
+_includes/.auctex-auto/
+_includes/mathjax.log
