@@ -2,7 +2,7 @@
 category: 
 tags: en
 title: Offline software suggestions
-last_modified_at: 2025-06-27
+last_modified_at: 2025-06-26
 published: true
 ---
 
