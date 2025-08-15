@@ -6,6 +6,8 @@ last_modified_at: 2025-06-26
 published: true
 ---
 
+(originally written 2024-12-19)
+
 # Offline software suggestions
 
 I spent a lot of time in 2024 switching to offline-first apps, and I'd like to share my top choices to save others some time. By offline-first, I mean apps workflows that minimize online requirements. There are two high-level software choices I made. First, I handle syncthing between devices through Syncthing. Second, I use Obsidian to handle working with Markdown files for many notes, and I record data like fitness data and book notes in Markdown files. If you have additional questions about my choices below or things to try, send me a note! I have additional notes not included here that I might add later on things like active GitHub issues that, if resolved, would shift my rankings.
