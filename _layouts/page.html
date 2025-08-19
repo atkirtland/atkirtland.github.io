@@ -1,33 +1,25 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  {% include head.html %}
+  <head>
+    {% include mathjax.html %}
+    <title>{{page.title}}</title>
+  </head>
 
-{% include head.html %}
-<head>
-  {% include mathjax.html %}
-  <title>{{page.title}}</title>
-</head>
-
-<body>
-	<header>
-<div style="display:none">
-  $
-  {% include mathjax.tex %}
-  $
-</div>
-{% include menu.html %}
-	</header>
-		<article>
-			<h1>{{ page.title }}</h1>
-                        <p>{{ content }}</p>
-		</article>
-	<footer>
-          {% if page.comments %}
-		{% include disqus.html %}
-          {% endif %}
-		{% include footer.html %}
-	</footer>
-</body>
+  <body>
+    <header>
+      <div style="display: none">$ {% include mathjax.tex %} $</div>
+      {% include menu.html %}
+    </header>
+    <article>
+      <h1>{{ page.title }}</h1>
+      <p>{{ content }}</p>
+    </article>
+    <footer>
+      {% if page.comments %} {% endif %} {% include footer.html %}
+    </footer>
+  </body>
 </html>

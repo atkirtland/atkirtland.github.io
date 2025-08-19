@@ -1,28 +1,21 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  {% include head.html %}
+  <head>
+    <title>{{page.title}}</title>
+  </head>
 
-{% include head.html %}
-<head>
-  <title>{{page.title}}</title>
-</head>
-
-<body>
-  <header>
-{% include menu.html %}
-{% include blogmenu.html %}
-  </header>
-		<article>
-			<h1>{{ page.title }}</h1>
-                        {{ content }}
-		</article>
-	<footer>
-          {% if page.comments %}
-		{% include disqus.html %}
-          {% endif %}
-		{% include footer.html %}
-	</footer>
-</body>
+  <body>
+    <header>{% include menu.html %} {% include blogmenu.html %}</header>
+    <article>
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </article>
+    <footer>
+      {% if page.comments %} {% endif %} {% include footer.html %}
+    </footer>
+  </body>
 </html>
