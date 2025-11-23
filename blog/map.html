@@ -50,7 +50,6 @@
     <div id="container">
         <header>
             {% include menu.html %}
-            {% include blogmenu.html %}
         </header>
 
         <div id="map"></div>
@@ -199,8 +198,19 @@
         {% endfor %}
 
         var gpx = '/assets/map/pvd-bos.gpx'; // URL to your GPX file or the GPX itself
-        new L.GPX(gpx, {async: true, gpx_options: {parseElements: 'track'}}).on('loaded', function(e) {
-        map.fitBounds(e.target.getBounds());
+        new L.GPX(gpx, {
+            async: true, 
+            gpx_options: {parseElements: 'track'},
+            marker_options: {
+                startIconUrl: null,
+                endIconUrl: null,
+                shadowUrl: null,
+                wptIconUrls: {
+                    '': 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png'
+                }
+            }
+        }).on('loaded', function(e) {
+            map.fitBounds(e.target.getBounds());
         }).addTo(map);
         // var pvdbpoxroute = L.GPX(gpx);
         // console.log(pvdbpoxroute);
