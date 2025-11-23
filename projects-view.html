@@ -1,0 +1,30 @@
+---
+layout: none
+---
+
+<table class="publications-table">
+  <tbody>
+{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+{% for project in sorted_projects %}
+    <tr>
+      <td class="pub-image-cell">
+        <img src="{{ project.image }}" alt="{{ project.image_alt }}" width="{{ project.image_width }}" height="{{ project.image_height }}" class="pub-image">
+      </td>
+      <td class="pub-text-cell">
+        <a href="{{ project.link }}">
+          <papertitle>{{ project.title }}</papertitle>
+        </a>
+        <br>
+        {{ project.description }}
+        <br>
+        <a href="{{ project.link }}">Demo</a>
+{% if project.source %}
+ / <a href="{{ project.source }}">Source</a>
+{% endif %}
+        <br>
+      </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+

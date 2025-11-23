@@ -1,0 +1,14 @@
+---
+layout: none
+---
+
+<h3>By Date</h3>
+<ul>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
+    <small>{{ post.date | date_to_string }}</small>
+  </li>
+{% endfor %}
+</ul>
+

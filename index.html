@@ -69,113 +69,14 @@
       <a href="/blog/feed.xml" class="nested-tab-link">RSS <span class="external-icon">↗</span></a>
     </nav>
 
-    <section class="tab-content active" id="papers-content">
-      <table class="publications-table">
-        <tbody>
-{% assign sorted_papers = site.papers | sort: 'date' | reverse %}
-{% for paper in sorted_papers %}
-          <tr>
-            <td class="pub-image-cell">
-              <img src="{{ paper.image }}" alt="{{ paper.image_alt }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" class="pub-image">
-            </td>
-            <td class="pub-text-cell">
-              <a href="{{ paper.link }}">
-                <papertitle>{{ paper.title }}</papertitle>
-              </a>
-              <br>
-              {{ paper.authors }}
-              <br>
-              {{ paper.venue }}, {{ paper.year }}
-              <br>
-            </td>
-          </tr>
-{% endfor %}
-        </tbody>
-      </table>
-    </section>
+    <section class="tab-content active" id="papers-content"></section>
 
-    <section class="tab-content" id="projects-content">
-      <table class="publications-table">
-        <tbody>
-{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
-{% for project in sorted_projects %}
-          <tr>
-            <td class="pub-image-cell">
-              <img src="{{ project.image }}" alt="{{ project.image_alt }}" width="{{ project.image_width }}" height="{{ project.image_height }}" class="pub-image">
-            </td>
-            <td class="pub-text-cell">
-              <a href="{{ project.link }}">
-                <papertitle>{{ project.title }}</papertitle>
-              </a>
-              <br>
-              {{ project.description }}
-              <br>
-              <a href="{{ project.link }}">Demo</a>
-{% if project.source %}
- / <a href="{{ project.source }}">Source</a>
-{% endif %}
-              <br>
-            </td>
-          </tr>
-{% endfor %}
-        </tbody>
-      </table>
-    </section>
+    <section class="tab-content" id="projects-content"></section>
 
     <section class="tab-content" id="blog-content">
-      <div class="nested-tab-content active" id="blog-date-content">
-        <h3>By Date</h3>
-        <ul>
-{% for post in site.posts %}
-          <li>
-            <a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
-            <small>{{ post.date | date_to_string }}</small>
-          </li>
-{% endfor %}
-        </ul>
-      </div>
-
-      <div class="nested-tab-content" id="blog-category-content">
-        <h3>By Category</h3>
-        <ul>
-{% assign sortedcats = site.categories | sort %}
-{% for cat in sortedcats %}
-{% assign catname = cat | first %}
-          <li>{{ catname }}
-            <ul>
-{% assign sortedposts = site.categories[catname] | sort | reverse %}
-{% for post in sortedposts %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <small>{{ post.date | date_to_string }}</small>
-              </li>
-{% endfor %}
-            </ul>
-          </li>
-{% endfor %}
-        </ul>
-      </div>
-
-      <div class="nested-tab-content" id="blog-tags-content">
-        <h3>By Tags</h3>
-        <ul>
-{% assign sortedtags = site.tags | sort %}
-{% for tag in sortedtags %}
-{% assign tagname = tag | first %}
-          <li>{{ tagname }}
-            <ul>
-{% assign sortedposts = site.tags[tagname] | sort %}
-{% for post in sortedposts %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <small>{{ post.date | date_to_string }}</small>
-              </li>
-{% endfor %}
-            </ul>
-          </li>
-{% endfor %}
-        </ul>
-      </div>
+      <div class="nested-tab-content active" id="blog-date-content"></div>
+      <div class="nested-tab-content" id="blog-category-content"></div>
+      <div class="nested-tab-content" id="blog-tags-content"></div>
     </section>
 
     <footer class="footer-section">

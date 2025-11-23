@@ -10,38 +10,99 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Function to switch to a tab
+  function switchToTab(targetTab) {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const blogNestedTabs = document.getElementById('blog-nested-tabs');
+    
+    // Remove active class from all buttons and contents
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+    
+    // Add active class to the target button and content
+    const targetButton = document.querySelector(`[data-tab="${targetTab}"]`);
+    if (targetButton) targetButton.classList.add('active');
+    
+    const contentDiv = document.getElementById(targetTab + '-content');
+    if (contentDiv) contentDiv.classList.add('active');
+    
+    // Show/hide nested tabs for blog
+    if (targetTab === 'blog') {
+      blogNestedTabs.classList.add('active');
+      // Auto-collapse profile section when blog is selected
+      if (section && !section.classList.contains('collapsed')) {
+        section.classList.add('collapsed');
+        toggle.classList.add('collapsed');
+      }
+      // Load default blog content if not loaded
+      const defaultBlogContent = document.getElementById('blog-date-content');
+      if (defaultBlogContent && !defaultBlogContent.dataset.loaded) {
+        loadContent('blog-date', defaultBlogContent);
+      }
+    } else {
+      blogNestedTabs.classList.remove('active');
+      
+      // Lazy load projects content if it's the projects tab
+      if (targetTab === 'projects' && contentDiv && !contentDiv.dataset.loaded) {
+        loadContent('projects', contentDiv);
+      }
+    }
+  }
+  
   // Tab switching functionality
   const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
-  const blogNestedTabs = document.getElementById('blog-nested-tabs');
   
   tabButtons.forEach(button => {
     button.addEventListener('click', function() {
       const targetTab = this.getAttribute('data-tab');
-      
-      // Remove active class from all buttons and contents
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-      
-      // Add active class to clicked button and corresponding content
-      this.classList.add('active');
-      document.getElementById(targetTab + '-content').classList.add('active');
-      
-      // Show/hide nested tabs for blog
-      if (targetTab === 'blog') {
-        blogNestedTabs.classList.add('active');
-        // Auto-collapse profile section when blog is selected
-        if (section && !section.classList.contains('collapsed')) {
-          section.classList.add('collapsed');
-          toggle.classList.add('collapsed');
-        }
-      } else {
-        blogNestedTabs.classList.remove('active');
-      }
+      switchToTab(targetTab);
+      // Update URL hash
+      window.location.hash = targetTab;
     });
   });
 
-  // Nested tab switching functionality
+  // Cache for loaded content
+  const contentCache = {};
+  
+  // Function to load content
+  function loadContent(targetTab, contentDiv, showLoading = true) {
+    if (contentDiv.dataset.loaded) return;
+    
+    if (showLoading) {
+      contentDiv.innerHTML = '<p>Loading...</p>';
+    }
+    
+    const urlMap = {
+      'papers': '/papers-view.html',
+      'projects': '/projects-view.html',
+      'blog-date': '/blog/date-view.html',
+      'blog-category': '/blog/category-view.html',
+      'blog-tags': '/blog/tags-view.html'
+    };
+    
+    const url = urlMap[targetTab];
+    if (url) {
+      if (contentCache[url]) {
+        contentDiv.innerHTML = contentCache[url];
+        contentDiv.dataset.loaded = 'true';
+      } else {
+        fetch(url)
+          .then(response => response.text())
+          .then(html => {
+            contentCache[url] = html;
+            contentDiv.innerHTML = html;
+            contentDiv.dataset.loaded = 'true';
+          })
+          .catch(error => {
+            console.error('Error loading content:', error);
+            contentDiv.innerHTML = '<p>Error loading content. Please try again.</p>';
+          });
+      }
+    }
+  }
+  
+  // Nested tab switching functionality with lazy loading
   const nestedTabButtons = document.querySelectorAll('.nested-tab-button');
   const nestedTabContents = document.querySelectorAll('.nested-tab-content');
   
@@ -55,8 +116,34 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Add active class to clicked button and corresponding content
       this.classList.add('active');
-      document.getElementById(targetNestedTab + '-content').classList.add('active');
+      const contentDiv = document.getElementById(targetNestedTab + '-content');
+      contentDiv.classList.add('active');
+      
+      // Lazy load content
+      loadContent(targetNestedTab, contentDiv);
     });
   });
+  
+  // Auto-load papers on page load
+  const papersContent = document.getElementById('papers-content');
+  if (papersContent) {
+    loadContent('papers', papersContent, false);
+  }
+  
+  // Handle URL hash navigation
+  function handleHashChange() {
+    const hash = window.location.hash.substring(1); // Remove the '#'
+    if (hash && ['papers', 'projects', 'blog'].includes(hash)) {
+      switchToTab(hash);
+    }
+  }
+  
+  // Check hash on page load
+  if (window.location.hash) {
+    handleHashChange();
+  }
+  
+  // Listen for hash changes
+  window.addEventListener('hashchange', handleHashChange);
 });
 

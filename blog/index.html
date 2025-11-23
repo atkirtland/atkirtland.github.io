@@ -1,38 +1,16 @@
 ---
 ---
-
 <!DOCTYPE html>
 <html>
-
-{% include head.html %}
 <head>
-  <title>For All K</title>
+  <meta http-equiv="refresh" content="0; url=/#blog">
+  <title>Redirecting to Blog...</title>
+  <script>
+    // Fallback if meta refresh doesn't work
+    window.location.href = '/#blog';
+  </script>
 </head>
-
 <body>
-	<header>
-          {% include menu.html %}
-                {% include blogmenu.html %}
-	</header>
-  <h1>
-    For All K
-  </h1>
-  <h3>
-    By Date
-  </h3>
-
-  
-    <ul>
-		{% for post in site.posts %}
-    <li>
-				<a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
-				{{ post.date | date_to_string }}
-
-    </li>
-		{% endfor %}
-    </ul>
-	<footer>
-		{% include footer.html %}
-	</footer>
+  <p>Redirecting to blog... <a href="/#blog">Click here if not redirected</a></p>
 </body>
 </html>

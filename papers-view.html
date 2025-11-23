@@ -1,0 +1,27 @@
+---
+layout: none
+---
+
+<table class="publications-table">
+  <tbody>
+{% assign sorted_papers = site.papers | sort: 'date' | reverse %}
+{% for paper in sorted_papers %}
+    <tr>
+      <td class="pub-image-cell">
+        <img src="{{ paper.image }}" alt="{{ paper.image_alt }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" class="pub-image">
+      </td>
+      <td class="pub-text-cell">
+        <a href="{{ paper.link }}">
+          <papertitle>{{ paper.title }}</papertitle>
+        </a>
+        <br>
+        {{ paper.authors }}
+        <br>
+        {{ paper.venue }}, {{ paper.year }}
+        <br>
+      </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
