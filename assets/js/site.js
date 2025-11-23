@@ -10,6 +10,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Dark mode toggle functionality
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = themeToggle.querySelector('.theme-icon');
+  
+  // Check for saved theme preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeIcon.textContent = '🌙';
+  }
+  
+  themeToggle.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    
+    // Update icon and save preference
+    if (document.body.classList.contains('dark-mode')) {
+      themeIcon.textContent = '🌙';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      themeIcon.textContent = '☀️';
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
   // Function to switch to a tab
   function switchToTab(targetTab) {
     const tabButtons = document.querySelectorAll('.tab-button');
