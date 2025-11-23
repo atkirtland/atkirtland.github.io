@@ -8,6 +8,9 @@ permalink: /blog/:title:output_ext
 collections:
   lists:
     output: true
+  papers:
+    output: false
+    sort_by: date
 kramdown:
   input: GFM
 defaults:

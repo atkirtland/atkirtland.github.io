@@ -129,3 +129,75 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Layout classes */
+.main-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-section {
+  display: flex;
+  gap: 2.5%;
+  margin-bottom: 20px;
+}
+
+.profile-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-image {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.publications-section {
+  margin-bottom: 20px;
+}
+
+.publications-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.pub-image-cell {
+  padding: 20px;
+  width: 25%;
+  vertical-align: middle;
+}
+
+.pub-image {
+  border-style: none;
+}
+
+.pub-text-cell {
+  width: 75%;
+  vertical-align: middle;
+}
+
+.footer-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}

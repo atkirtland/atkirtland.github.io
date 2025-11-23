@@ -15,143 +15,77 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Aaron Kirtland</name>
-              </p>
+  <div class="main-wrapper">
+    <section class="profile-section">
+      <div class="profile-text">
+        <p class="text-center">
+          <name>Aaron Kirtland</name>
+        </p>
 
-              <p>
-                I'm a PhD student in applied math at Brown University interested in sequential decision making and cognitively-inspired AI.
-                I am supported by an NSF-GRFP award.
-              </p>
+        <p>
+          I'm a PhD student in applied math at Brown University interested in sequential decision making and cognitively-inspired AI.
+          I am supported by an NSF-GRFP award.
+        </p>
 
-              <p>
-                I attended Washington University in St. Louis because of a full-tuition scholarship, and I thru-hiked the Pacific Crest Trail after graduating in 2021.
-                Send me an email or <a href="https://forms.gle/PL59WorypgtuHXoG6">leave me a message</a> if you would like to chat!
-                <!-- In my spare time, I enjoy reading Chinese and going outdoors <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. -->
-                  <!-- <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> -->
-              </p>
+        <p>
+          I attended Washington University in St. Louis because of a full-tuition scholarship, and I thru-hiked the Pacific Crest Trail after graduating in 2021.
+          Send me an email or <a href="https://forms.gle/PL59WorypgtuHXoG6">leave me a message</a> if you would like to chat!
+          <!-- In my spare time, I enjoy reading Chinese and going outdoors <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. -->
+            <!-- <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> -->
+        </p>
 
-              <p style="text-align:center">
-                <a href="#" onclick="alert('Email: atkirtland AT gmail DOT com'); return false;" title="atkirtland AT gmail DOT com">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=cHUOkpkAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href=blog/>Blog</a>
-              </p>
-              <p style="text-align:center">
-                <a href="https://github.com/atkirtland/">Github</a> &nbsp/&nbsp
-                <a href="https://www.inaturalist.org/people/atkirtland">iNaturalist</a> &nbsp/&nbsp
-                <a href="https://www.openstreetmap.org/user/atkirtland">OSM</a>
-              </p>
+        <p class="text-center">
+          <a href="#" onclick="alert('Email: atkirtland AT gmail DOT com'); return false;" title="atkirtland AT gmail DOT com">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?user=cHUOkpkAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+          <a href=blog/>Blog</a>
+        </p>
+        <p class="text-center">
+          <a href="https://github.com/atkirtland/">Github</a> &nbsp/&nbsp
+          <a href="https://www.inaturalist.org/people/atkirtland">iNaturalist</a> &nbsp/&nbsp
+          <a href="https://www.openstreetmap.org/user/atkirtland">OSM</a>
+        </p>
+      </div>
+      <div class="profile-image">
+        <a href="assets/img/me2.jpg"><img alt="profile photo" src="assets/img/me2.jpg" class="hoverZoomLink"></a>
+      </div>
+    </section>
+
+    <section class="publications-section">
+      <table class="publications-table">
+        <tbody>
+{% assign sorted_papers = site.papers | sort: 'date' | reverse %}
+{% for paper in sorted_papers %}
+          <tr>
+            <td class="pub-image-cell">
+              <img src="{{ paper.image }}" alt="{{ paper.image_alt }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" class="pub-image">
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="assets/img/me2.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/img/me2.jpg" class="hoverZoomLink"></a>
+            <td class="pub-text-cell">
+              <a href="{{ paper.link }}">
+                <papertitle>{{ paper.title }}</papertitle>
+              </a>
+              <br>
+              {{ paper.authors }}
+              <br>
+              {{ paper.venue }}, {{ paper.year }}
+              <br>
             </td>
           </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="assets/img/tmaze-compact.png" alt="mesh" width="160" height="120" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2407.07333">
-                  <papertitle>Mitigating Partial Observability in Sequential Decision Processes via the Lambda Discrepancy</papertitle>
-                </a>
-                <br>
-            Cameron Allen*, <strong>Aaron Kirtland</strong>*, Ruo Yu Tao*, Sam Lobel, Daniel Scott, Nicholas Petrocelli, Omer Gottesman, Ronald Parr, Michael L. Littman, George Konidaris
-                <br>
-                <em>NeurIPS, <a href="https://openreview.net/forum?id=5Lv8kD03Mu">RLC Finding the Frame workshop</a>, and <a href="https://openreview.net/forum?id=KpwJiBc5kC">ICML FoRLaC workshop</a></em>, 2024
-                <br>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="assets/img/mesh.png" alt="mesh" width="160" height="120" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://doi.org/10.1137/22M152092X">
-                  <papertitle>An Unstructured Mesh Approach to Nonlinear Noise Reduction for Coupled Systems</papertitle>
-                </a>
-                <br>
-                <strong>Aaron Kirtland</strong>, Jonah Botvinick-Greenhouse, Marianne DeBrito, Megan Osborne, Casey Johnson, Robert S. Martin, Samuel J. Araki, Daniel Q. Eckhardt
-                <br>
-                <em>SIAM Journal on Applied Dynamical Systems</em>, 2023
-                <br>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="assets/img/smearing.jpg" alt="" width="160" height="120" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://www.degruyter.com/document/doi/10.1515/jmc-2020-0035/html?lang=en">
-                  <papertitle>The polynomial learning with errors problem and the smearing condition</papertitle>
-                </a>
-                <br>
-                Liljana Babinkostova*, Ariana Chin*, <strong>Aaron Kirtland</strong>*, Vladyslav Nazarchuk*, Esther Plotnick*
-                <br>
-                <em>Journal of Mathematical Cryptology</em>, 2022
-                <br>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="assets/img/spectral.png" alt="" width="160" height="120" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2007.13189">
-                  <papertitle>The Ring Learning with Errors Problem: Spectral Distortion</papertitle>
-                </a>
-                <br>
-                Liljana Babinkostova*, Ariana Chin*, <strong>Aaron Kirtland</strong>*, Vladyslav Nazarchuk*, Esther Plotnick*
-                <br>
-                <em>Accepted with minor revisions to Involve, A Journal of Mathematics</em>, 2022
-                <br>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="assets/img/pad.png" alt="" width="160" height="120" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://iopscience.iop.org/article/10.1088/1361-6528/aab229">
-                  <papertitle>Preparing cuprous oxide nanomaterials by electrochemical method for non-enzymatic glucose biosensor</papertitle>
-                </a>
-                <br>
-                Thu-Thuy Nguyen, Bui The Huy, Seo-Young Hwang, Nguyen Minh Vuong, Quoc-Thai Pham, Nguyen Ngoc Nghia, <strong>Aaron Kirtland</strong>, and Yong-Ill Lee
-                <br>
-                <em>Nanotechnology</em>, 2018
-                <br>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        
+{% endfor %}
+        </tbody>
+      </table>
+    </section>
 
-        <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
-            <tbody><tr>
-              <td>
-                <p align="center">
-                <!-- <a href="information.html">Here</a> is some more info about me... -->
-                  <font size="2">
-                    Template from <a href="https://github.com/jonbarron/jonbarron_website">here.</a>
-                  </font>
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </table>
+    <footer class="footer-section">
+      <p class="text-center">
+      <!-- <a href="information.html">Here</a> is some more info about me... -->
+        <span class="footer-text">
+          Template from <a href="https://github.com/jonbarron/jonbarron_website">here.</a>
+        </span>
+      </p>
+    </footer>
+  </div>
 
-<div class="footnotes" role="doc-endnotes" style="display: none;">
+<div class="footnotes hidden" role="doc-endnotes">
   <ol>
     <!-- <li id="fn:1" role="doc-endnote"> -->
     <!--   <p>Currently working my way through 聊齋<a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p> -->
