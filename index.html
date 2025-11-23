@@ -15,6 +15,13 @@
 </head>
 
 <body>
+  <script>
+    // Apply saved theme immediately to prevent flash
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+  </script>
   <div class="main-wrapper">
     <section class="profile-section" id="profileSection">
       <div class="profile-text">

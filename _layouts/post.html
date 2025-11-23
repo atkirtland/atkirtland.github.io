@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <script>
+      // Apply saved theme immediately to prevent flash
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    </script>
     <header>
       <div style="display: none">$ {% include mathjax.tex %} $</div>
       {% include menu.html %} {% include blogmenu.html %}

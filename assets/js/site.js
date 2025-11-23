@@ -145,6 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Lazy load content
       loadContent(targetNestedTab, contentDiv);
+      
+      // Update URL hash
+      window.location.hash = targetNestedTab;
     });
   });
   
@@ -157,8 +160,36 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle URL hash navigation
   function handleHashChange() {
     const hash = window.location.hash.substring(1); // Remove the '#'
+    
+    // Check if it's a main tab
     if (hash && ['papers', 'projects', 'blog'].includes(hash)) {
       switchToTab(hash);
+    }
+    // Check if it's a blog nested tab
+    else if (hash && ['blog-date', 'blog-category', 'blog-tags'].includes(hash)) {
+      // First switch to blog tab
+      switchToTab('blog');
+      
+      // Then switch to the specific nested tab
+      setTimeout(() => {
+        const nestedTabButtons = document.querySelectorAll('.nested-tab-button');
+        const nestedTabContents = document.querySelectorAll('.nested-tab-content');
+        
+        // Remove active from all
+        nestedTabButtons.forEach(btn => btn.classList.remove('active'));
+        nestedTabContents.forEach(content => content.classList.remove('active'));
+        
+        // Activate the target
+        const targetButton = document.querySelector(`[data-nested-tab="${hash}"]`);
+        if (targetButton) {
+          targetButton.classList.add('active');
+          const contentDiv = document.getElementById(hash + '-content');
+          if (contentDiv) {
+            contentDiv.classList.add('active');
+            loadContent(hash, contentDiv);
+          }
+        }
+      }, 50);
     }
   }
   
