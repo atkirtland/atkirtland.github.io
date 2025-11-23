@@ -11,6 +11,9 @@ collections:
   papers:
     output: false
     sort_by: date
+  projects:
+    output: false
+    sort_by: date
 kramdown:
   input: GFM
 defaults:

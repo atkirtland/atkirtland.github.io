@@ -1,0 +1,16 @@
+# This file keeps the _projects directory in git
+# Delete this file once you add your first project
+
+# Example project file structure:
+# ---
+# title: "Project Title"
+# description: "Brief description of the project"
+# tags: "Python, Machine Learning, Open Source"
+# date: 2024-01-01
+# link: "https://github.com/username/project"
+# image: "assets/img/project-image.png"
+# image_alt: "project screenshot"
+# image_width: 160
+# image_height: 120
+# ---
+

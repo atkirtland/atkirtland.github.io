@@ -16,7 +16,7 @@
 
 <body>
   <div class="main-wrapper">
-    <section class="profile-section">
+    <section class="profile-section" id="profileSection">
       <div class="profile-text">
         <p class="text-center">
           <name>Aaron Kirtland</name>
@@ -50,7 +50,16 @@
       </div>
     </section>
 
-    <section class="publications-section">
+    <button class="profile-toggle" id="profileToggle" aria-label="Toggle profile section">
+      <span class="toggle-arrow">▲</span>
+    </button>
+
+    <nav class="content-tabs">
+      <button class="tab-button active" data-tab="papers">Papers</button>
+      <button class="tab-button" data-tab="projects">Projects</button>
+    </nav>
+
+    <section class="tab-content active" id="papers-content">
       <table class="publications-table">
         <tbody>
 {% assign sorted_papers = site.papers | sort: 'date' | reverse %}
@@ -67,6 +76,31 @@
               {{ paper.authors }}
               <br>
               {{ paper.venue }}, {{ paper.year }}
+              <br>
+            </td>
+          </tr>
+{% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="tab-content" id="projects-content">
+      <table class="publications-table">
+        <tbody>
+{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+{% for project in sorted_projects %}
+          <tr>
+            <td class="pub-image-cell">
+              <img src="{{ project.image }}" alt="{{ project.image_alt }}" width="{{ project.image_width }}" height="{{ project.image_height }}" class="pub-image">
+            </td>
+            <td class="pub-text-cell">
+              <a href="{{ project.link }}">
+                <papertitle>{{ project.title }}</papertitle>
+              </a>
+              <br>
+              {{ project.description }}
+              <br>
+              {{ project.tags }}
               <br>
             </td>
           </tr>
@@ -95,6 +129,8 @@
     </li>
   </ol>
 </div>
+
+<script src="/assets/js/site.js"></script>
 
 </body>
 
