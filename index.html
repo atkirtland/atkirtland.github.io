@@ -100,7 +100,9 @@
               <br>
               {{ project.description }}
               <br>
-              {{ project.tags }}
+{% if project.source %}
+<a href="{{ project.source }}">Source</a>
+{% endif %}
               <br>
             </td>
           </tr>
