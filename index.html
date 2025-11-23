@@ -57,6 +57,16 @@
     <nav class="content-tabs">
       <button class="tab-button active" data-tab="papers">Papers</button>
       <button class="tab-button" data-tab="projects">Projects</button>
+      <button class="tab-button" data-tab="blog">Blog</button>
+    </nav>
+
+    <nav class="nested-tabs" id="blog-nested-tabs">
+      <span class="blog-title">For All K</span>
+      <button class="nested-tab-button active" data-nested-tab="blog-date">By Date</button>
+      <button class="nested-tab-button" data-nested-tab="blog-category">By Category</button>
+      <button class="nested-tab-button" data-nested-tab="blog-tags">By Tags</button>
+      <a href="/blog/map.html" class="nested-tab-link">Map <span class="external-icon">↗</span></a>
+      <a href="/blog/feed.xml" class="nested-tab-link">RSS <span class="external-icon">↗</span></a>
     </nav>
 
     <section class="tab-content active" id="papers-content">
@@ -100,8 +110,9 @@
               <br>
               {{ project.description }}
               <br>
+              <a href="{{ project.link }}">Demo</a>
 {% if project.source %}
-<a href="{{ project.source }}">Source</a>
+ / <a href="{{ project.source }}">Source</a>
 {% endif %}
               <br>
             </td>
@@ -109,6 +120,62 @@
 {% endfor %}
         </tbody>
       </table>
+    </section>
+
+    <section class="tab-content" id="blog-content">
+      <div class="nested-tab-content active" id="blog-date-content">
+        <h3>By Date</h3>
+        <ul>
+{% for post in site.posts %}
+          <li>
+            <a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
+            <small>{{ post.date | date_to_string }}</small>
+          </li>
+{% endfor %}
+        </ul>
+      </div>
+
+      <div class="nested-tab-content" id="blog-category-content">
+        <h3>By Category</h3>
+        <ul>
+{% assign sortedcats = site.categories | sort %}
+{% for cat in sortedcats %}
+{% assign catname = cat | first %}
+          <li>{{ catname }}
+            <ul>
+{% assign sortedposts = site.categories[catname] | sort | reverse %}
+{% for post in sortedposts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <small>{{ post.date | date_to_string }}</small>
+              </li>
+{% endfor %}
+            </ul>
+          </li>
+{% endfor %}
+        </ul>
+      </div>
+
+      <div class="nested-tab-content" id="blog-tags-content">
+        <h3>By Tags</h3>
+        <ul>
+{% assign sortedtags = site.tags | sort %}
+{% for tag in sortedtags %}
+{% assign tagname = tag | first %}
+          <li>{{ tagname }}
+            <ul>
+{% assign sortedposts = site.tags[tagname] | sort %}
+{% for post in sortedposts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <small>{{ post.date | date_to_string }}</small>
+              </li>
+{% endfor %}
+            </ul>
+          </li>
+{% endfor %}
+        </ul>
+      </div>
     </section>
 
     <footer class="footer-section">
