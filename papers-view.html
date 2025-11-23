@@ -14,13 +14,21 @@ layout: none
         <img src="{{ paper.image }}" alt="{{ paper.image_alt }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" class="pub-image">
       </td>
       <td class="pub-text-cell">
+{% if paper.link %}
         <a href="{{ paper.link }}">
           <papertitle>{{ paper.title }}</papertitle>
         </a>
+{% else %}
+        <papertitle>{{ paper.title }}</papertitle>
+{% endif %}
         <br>
         {{ paper.authors }}
         <br>
-        {{ paper.venue }}, {{ paper.year }}
+{% if paper.venue_link %}
+        <em><a href="{{ paper.venue_link }}">{{ paper.venue }}</a></em>{% if paper.venue_extra %}{{ paper.venue_extra }}{% endif %}, {{ paper.year }}
+{% else %}
+        <em>{{ paper.venue }}</em>, {{ paper.year }}
+{% endif %}
         <br>
       </td>
     </tr>
