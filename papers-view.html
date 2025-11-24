@@ -1,6 +1,7 @@
 ---
 layout: none
 ---
+
 <p style="text-align: center; margin-bottom: 20px;">
   See papers on <a href="https://scholar.google.com/citations?user=cHUOkpkAAAAJ&hl=en">Google Scholar</a>, or
 </p>
@@ -28,6 +29,9 @@ layout: none
         <em><a href="{{ paper.venue_link }}">{{ paper.venue }}</a></em>{% if paper.venue_extra %}{{ paper.venue_extra }}{% endif %}, {{ paper.year }}
 {% else %}
         <em>{{ paper.venue }}</em>, {{ paper.year }}
+{% endif %}
+{% if paper.source %}
+        / <a href="{{ paper.source }}">Source</a>
 {% endif %}
         <br>
       </td>

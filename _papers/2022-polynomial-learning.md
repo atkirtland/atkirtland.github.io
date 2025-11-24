@@ -10,5 +10,6 @@ image: "assets/img/smearing.jpg"
 image_alt: ""
 image_width: 160
 image_height: 120
+source: "https://github.com/atkirtland/rlwe-smearing"
 ---
 

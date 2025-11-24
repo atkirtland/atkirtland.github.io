@@ -11,14 +11,20 @@ layout: none
         <img src="{{ project.image }}" alt="{{ project.image_alt }}" width="{{ project.image_width }}" height="{{ project.image_height }}" class="pub-image">
       </td>
       <td class="pub-text-cell">
+{% if project.link %}
         <a href="{{ project.link }}">
           <papertitle>{{ project.title }}</papertitle>
         </a>
+{% else %}
+        <papertitle>{{ project.title }}</papertitle>
+{% endif %}
         <br>
         {{ project.description }}
         <br>
 {% if project.source %}
-        <a href="{{ project.source }}">Source</a>
+        <a href="{{ project.source }}">Source</a>{% if project.date %}, {{ project.date | date: "%Y-%m" }}{% endif %}
+{% elsif project.date %}
+        {{ project.date | date: "%Y-%m" }}
 {% endif %}
         <br>
       </td>
