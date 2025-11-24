@@ -16,9 +16,13 @@
 
 <body>
   <script>
-    // Apply saved theme immediately to prevent flash
+    // Apply saved theme immediately to prevent flash (default to dark mode)
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+    if (savedTheme === 'light') {
+      // Only apply light mode if explicitly saved
+      document.body.classList.remove('dark-mode');
+    } else {
+      // Default to dark mode
       document.body.classList.add('dark-mode');
     }
   </script>
@@ -59,9 +63,9 @@
         <span class="toggle-arrow">▲</span>
       </button>
       
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <span class="theme-icon">☀️</span>
-      </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-icon">🌙</span>
+    </button>
     </div>
 
     <nav class="content-tabs">
