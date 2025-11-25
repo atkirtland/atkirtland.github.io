@@ -14,6 +14,9 @@ collections:
   projects:
     output: false
     sort_by: date
+  microblog:
+    output: false
+    sort_by: date
 kramdown:
   input: GFM
 defaults:

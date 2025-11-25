@@ -105,7 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
       'projects': '/projects-view.html',
       'blog-date': '/blog/date-view.html',
       'blog-category': '/blog/category-view.html',
-      'blog-tags': '/blog/tags-view.html'
+      'blog-tags': '/blog/tags-view.html',
+      'blog-microblog': '/blog/microblog-view.html'
     };
     
     const url = urlMap[targetTab];
@@ -169,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
       switchToTab(hash);
     }
     // Check if it's a blog nested tab
-    else if (hash && ['blog-date', 'blog-category', 'blog-tags'].includes(hash)) {
+    else if (hash && ['blog-date', 'blog-category', 'blog-tags', 'blog-microblog'].includes(hash)) {
       // First switch to blog tab
       switchToTab('blog');
       

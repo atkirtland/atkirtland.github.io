@@ -1,0 +1,79 @@
+---
+layout: none
+---
+
+<h3>Microblog</h3>
+<div class="microblog-entries">
+{% assign sorted_entries = site.microblog | sort: 'date' | reverse %}
+{% for entry in sorted_entries %}
+  <div class="microblog-entry">
+    <small class="microblog-timestamp">{{ entry.date | date: "%B %d, %Y at %I:%M %p" }}</small>
+    <div class="microblog-content">
+      {{ entry.content }}
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<style>
+.microblog-entries {
+  max-width: 800px;
+}
+
+.microblog-entry {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body.dark-mode .microblog-entry {
+  border-bottom-color: #444;
+}
+
+.microblog-entry:last-child {
+  border-bottom: none;
+}
+
+.microblog-timestamp {
+  display: block;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9em;
+}
+
+body.dark-mode .microblog-timestamp {
+  color: #999;
+}
+
+.microblog-content {
+  line-height: 1.6;
+}
+
+.microblog-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Image styling - consistent width like Twitter */
+.microblog-content img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0.75rem 0;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+
+body.dark-mode .microblog-content img {
+  border-color: #444;
+}
+
+/* On mobile, images take full width */
+@media (max-width: 600px) {
+  .microblog-content img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+</style>
+
