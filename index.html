@@ -30,28 +30,22 @@
     <section class="profile-section" id="profileSection">
       <div class="profile-text">
         <p class="text-center">
-          <name>Aaron Kirtland</name>
+          <name id="profileName" 
+                data-en="Aaron Kirtland"
+                data-zh="Aaron Kirtland（柯文宇）"></name>
         </p>
 
-        <p>
-          I'm a PhD student at Brown University interested in sequential decision making and cognitively-inspired AI.
-          I am supported by an NSF-GRFP award.
-        </p>
+        <p id="bio1"
+           data-en="I'm a PhD student at Brown University interested in sequential decision making and cognitively-inspired AI. I am supported by an NSF-GRFP award."
+           data-zh="我是布朗大學的博士生，對認知啟發的安全AI和順序決策感興趣。我獲得了NSF-GRFP獎學金的資助。"></p>
 
-        <p>
-          I attended WashU with a full-tuition scholarship, and I thru-hiked the Pacific Crest Trail after graduating in 2021.
-          Send me an <a href="#" onclick="alert('Email: atkirtland AT gmail DOT com'); return false;" title="atkirtland AT gmail DOT com">email</a> or <a href="https://forms.gle/PL59WorypgtuHXoG6">leave me a message</a> if you would like to chat!
-          <!-- In my spare time, I enjoy reading Chinese and going outdoors <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. -->
-            <!-- <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> -->
-        </p>
+        <p id="bio2"
+           data-en="I attended WashU with a full-tuition scholarship, and I thru-hiked the Pacific Crest Trail after graduating in 2021. Send me an &lt;a href=&quot;#&quot; onclick=&quot;alert('Email: atkirtland AT gmail DOT com'); return false;&quot; title=&quot;atkirtland AT gmail DOT com&quot;&gt;email&lt;/a&gt; or &lt;a href=&quot;https://forms.gle/PL59WorypgtuHXoG6&quot;&gt;leave me a message&lt;/a&gt; if you would like to chat!"
+           data-zh="我在聖路易斯華盛頓大學得到了全額學費獎學金，並於2021年畢業以後徒步走完了太平洋屋脊步道。如果你想聊天，請給我發&lt;a href=&quot;#&quot; onclick=&quot;alert('Email: atkirtland AT gmail DOT com'); return false;&quot; title=&quot;atkirtland AT gmail DOT com&quot;&gt;電子郵件&lt;/a&gt;或&lt;a href=&quot;https://forms.gle/PL59WorypgtuHXoG6&quot;&gt;留言&lt;/a&gt;！"></p>
 
-        <p>
-          Other places I contribute:
-          <a href="https://github.com/atkirtland/">Github</a> &nbsp/&nbsp
-          <a href="https://www.inaturalist.org/people/atkirtland">iNaturalist</a> &nbsp/&nbsp
-          <a href="https://www.openstreetmap.org/user/atkirtland">OSM</a> &nbsp/&nbsp
-          <a href="https://en.wikipedia.org/wiki/User:Atkirtland">Wikipedia</a>
-        </p>
+        <p id="bio3"
+           data-en="Other places I contribute: &lt;a href=&quot;https://github.com/atkirtland/&quot;&gt;Github&lt;/a&gt; &amp;nbsp/&amp;nbsp &lt;a href=&quot;https://www.inaturalist.org/people/atkirtland&quot;&gt;iNaturalist&lt;/a&gt; &amp;nbsp/&amp;nbsp &lt;a href=&quot;https://www.openstreetmap.org/user/atkirtland&quot;&gt;OSM&lt;/a&gt; &amp;nbsp/&amp;nbsp &lt;a href=&quot;https://en.wikipedia.org/wiki/User:Atkirtland&quot;&gt;Wikipedia&lt;/a&gt;"
+           data-zh="我提交貢獻的地方：&lt;a href=&quot;https://github.com/atkirtland/&quot;&gt;Github&lt;/a&gt; &amp;nbsp/&amp;nbsp &lt;a href=&quot;https://www.inaturalist.org/people/atkirtland&quot;&gt;iNaturalist&lt;/a&gt; &amp;nbsp/&amp;nbsp &lt;a href=&quot;https://www.openstreetmap.org/user/atkirtland&quot;&gt;OSM&lt;/a&gt; &amp;nbsp/&amp;nbsp &lt;a href=&quot;https://en.wikipedia.org/wiki/User:Atkirtland&quot;&gt;Wikipedia&lt;/a&gt;"></p>
       </div>
       <div class="profile-image">
         <a href="assets/img/me2.jpg"><img alt="profile photo" src="assets/img/me2.jpg" class="hoverZoomLink"></a>
@@ -59,13 +53,17 @@
     </section>
 
     <div class="toggle-buttons-container">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-icon">🌙</span>
+    </button>
+      
       <button class="profile-toggle" id="profileToggle" aria-label="Toggle profile section">
         <span class="toggle-arrow">▲</span>
       </button>
       
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-      <span class="theme-icon">🌙</span>
-    </button>
+      <button class="translation-toggle" id="translationToggle" aria-label="Toggle Chinese translation">
+        <span class="translation-icon">中</span>
+      </button>
     </div>
 
     <nav class="content-tabs">

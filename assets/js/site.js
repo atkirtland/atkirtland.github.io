@@ -37,6 +37,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Translation toggle functionality
+  const translationToggle = document.getElementById('translationToggle');
+  const translationIcon = translationToggle.querySelector('.translation-icon');
+  
+  // Get all elements with translation data
+  const translatableElements = document.querySelectorAll('[data-en][data-zh]');
+  
+  // Check for saved language preference or default to English
+  let currentLang = localStorage.getItem('language') || 'en';
+  
+  // Function to update language
+  function updateLanguage(lang) {
+    translatableElements.forEach(element => {
+      const content = element.getAttribute('data-' + lang);
+      // Check if element contains HTML or just text
+      if (content.includes('<')) {
+        element.innerHTML = content;
+      } else {
+        element.textContent = content;
+      }
+    });
+    
+    translationIcon.textContent = lang === 'en' ? '中' : 'EN';
+  }
+  
+  // Initialize content on page load
+  updateLanguage(currentLang);
+  
+  translationToggle.addEventListener('click', function() {
+    // Toggle language
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    updateLanguage(currentLang);
+    localStorage.setItem('language', currentLang);
+  });
+
   // Function to switch to a tab
   function switchToTab(targetTab) {
     const tabButtons = document.querySelectorAll('.tab-button');
