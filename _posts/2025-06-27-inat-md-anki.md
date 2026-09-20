@@ -8,11 +8,7 @@ published: true
 
 # Using iNaturalist, Obsidian, and Anki to learn plant taxonomy
 
-<p align="center" markdown=1>
-  ![Obsidian graph of taxonomy notes](/assets/img/treeoflife.png)
-  
-  My Obsidian taxonomy notes [^1].
-</p>
+{% include image-gallery.html, images: "treeoflife.png", captions: "My Obsidian taxonomy notes.[^1]" %}
 
 [^1]: A more powerful graph renderer would show this as a tree with only a couple of exceptions. Maybe I'll render it dynamically here in the future?
 

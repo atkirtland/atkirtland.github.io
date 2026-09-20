@@ -1,0 +1,29 @@
+{% assign gallery_path_parts = page.filePathStem | split: "/" %}
+{% assign gallery_post_filename = gallery_path_parts | last %}
+{% assign gallery_base_path = "/assets/img/" | append: gallery_post_filename | append: "/" %}
+{% assign gallery_images = images | split: "|" %}
+{% assign gallery_captions = captions | default: "" | split: "|" %}
+
+<div
+  class="image-gallery"
+  style="display: flex; flex-wrap: wrap; gap: 0.25rem; align-items: center;"
+>
+  {% for gallery_image in gallery_images %}
+    {% assign gallery_image = gallery_image | strip %}
+    {% assign gallery_caption = gallery_captions[forloop.index0] | strip %}
+    {% assign gallery_alt = gallery_caption %}
+    {% if gallery_alt == blank %}
+      {% assign gallery_alt = gallery_image | split: "." | first | replace: "_", " " | replace: "-", " " %}
+    {% endif %}
+    <figure style="flex: 1 1 15rem; margin: 0; text-align: center;">
+      <img
+        src="{{ gallery_base_path }}{{ gallery_image }}"
+        alt="{{ gallery_alt | escape }}"
+        style="display: block; width: 100%; height: auto;"
+      >
+      {% if gallery_caption != blank %}
+      <figcaption>{{ gallery_caption }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+</div>

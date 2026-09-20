@@ -3,15 +3,11 @@
 
 <!DOCTYPE HTML>
 <html lang="en">
-{% include head.html %}
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<head>
+  {% include head.html %}
   <title>Aaron Kirtland</title>
-  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
@@ -66,21 +62,8 @@
       </button>
     </div>
 
-    <nav class="content-tabs">
-      <button class="tab-button active" data-tab="papers">Papers</button>
-      <button class="tab-button" data-tab="projects">Projects</button>
-      <button class="tab-button" data-tab="blog">Blog</button>
-    </nav>
-
-    <nav class="nested-tabs" id="blog-nested-tabs">
-      <span class="blog-title">For All K</span>
-      <button class="nested-tab-button active" data-nested-tab="blog-date">By Date</button>
-      <button class="nested-tab-button" data-nested-tab="blog-category">By Category</button>
-      <button class="nested-tab-button" data-nested-tab="blog-tags">By Tags</button>
-      <button class="nested-tab-button" data-nested-tab="blog-microblog">Microblog</button>
-      <a href="/blog/map.html" class="nested-tab-link">Map <span class="external-icon">↗</span></a>
-      <a href="/blog/feed.xml" class="nested-tab-link">RSS <span class="external-icon">↗</span></a>
-    </nav>
+    {% include menu.html %}
+    {% include blogmenu.html %}
 
     <section class="tab-content active" id="papers-content"></section>
 

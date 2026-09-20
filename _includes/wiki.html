@@ -1,2 +1,2 @@
 <!-- This adds an extra unwanted newline at the end. using {%- -%} doesn't work. -->
-<a href="https://en.wikipedia.org/wiki/{{ include.l }}">{{ include.l }}</a>
+<a href="https://en.wikipedia.org/wiki/{{ l | url_encode }}">{{ l }}</a>

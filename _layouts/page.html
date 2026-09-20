@@ -3,10 +3,12 @@
 
 <!doctype html>
 <html>
-  {% include head.html %}
   <head>
+    {% include head.html %}
+    {% if mathjax %}
     {% include mathjax.html %}
-    <title>{{page.title}}</title>
+    {% endif %}
+    <title>{{ title }}</title>
   </head>
 
   <body>
@@ -20,15 +22,17 @@
       }
     </script>
     <header>
+      {% if mathjax %}
       <div style="display: none">$ {% include mathjax.tex %} $</div>
+      {% endif %}
       {% include menu.html %}
     </header>
     <article>
-      <h1>{{ page.title }}</h1>
-      <p>{{ content }}</p>
+      <h1>{{ title }}</h1>
+      {{ content }}
     </article>
     <footer>
-      {% if page.comments %} {% endif %} {% include footer.html %}
+      {% if comments %}{% include footer.html %}{% endif %}
     </footer>
   </body>
 </html>

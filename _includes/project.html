@@ -1,6 +1,6 @@
-    <li>
-      <font size=-1>(<a href={{include.link}}>GIT</a>)</font>
-      {{include.title}}
-      <font size=-1>{{include.tags}}</font>
-      <br />{{include.description}}
-    </li>
+<li>
+  <small>(<a href="{{ link | escape }}">GIT</a>)</small>
+  {{ title }}
+  <small>{{ tags }}</small>
+  <br>{{ description }}
+</li>

@@ -1,10 +1,16 @@
-<div class="menu">
-<ul>
-  <!-- <li><a href=/>Home</a></li> -->
-  <li><a href=/blog/>Posts by Date</a></li>
-  <li><a href=/blog/map.html>Map</a></li>
-  <li><a href=/blog/by-category.html>Posts by Category</a></li>
-  <!-- <li><a href=/blog/tags.html>Posts by Tag</a></li> -->
-  <li><a href=/blog/feed.xml>RSS Feed</a></li>
-</ul>
-</div>
+<nav class="nested-tabs{% if blog_navigation %} active{% endif %}" id="blog-nested-tabs">
+  <span class="blog-title">For All K</span>
+  {% if page.url == "/" %}
+  <button class="nested-tab-button active" data-nested-tab="blog-date">By Date</button>
+  <button class="nested-tab-button" data-nested-tab="blog-category">By Category</button>
+  <button class="nested-tab-button" data-nested-tab="blog-tags">By Tags</button>
+  <button class="nested-tab-button" data-nested-tab="blog-microblog">Microblog</button>
+  {% else %}
+  <a href="/#blog-date" class="nested-tab-link">By Date</a>
+  <a href="/#blog-category" class="nested-tab-link">By Category</a>
+  <a href="/#blog-tags" class="nested-tab-link">By Tags</a>
+  <a href="/#blog-microblog" class="nested-tab-link">Microblog</a>
+  {% endif %}
+  <a href="/blog/map.html" class="nested-tab-link">Map <span class="external-icon">↗</span></a>
+  <a href="/blog/feed.xml" class="nested-tab-link">RSS <span class="external-icon">↗</span></a>
+</nav>

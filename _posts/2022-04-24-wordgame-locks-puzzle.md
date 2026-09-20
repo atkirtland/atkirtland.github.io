@@ -2,40 +2,13 @@
 categories: Math
 title: Word Game（文字遊戲）Locks Puzzle Analysis
 tags: en
+mathjax: true
 ---
 
-I've been playing [Word Game/文字遊戲](https://store.steampowered.com/app/1109570/\_/) recently, and I ran into a puzzle that made me ask some questions about generators of the symmetric group $$S_7$$!
+I've been playing [Word Game/文字遊戲](https://store.steampowered.com/app/1109570/\_/) recently, and I ran into a puzzle that made me ask some questions about generators of the symmetric group $S_7$!
 
-<style>
-table {
-  table-layout: fixed ;
-  width: 100% ;
-}
-img {
-  width: 75%;
-  text-align: center;
-  align: center;
-}
-</style>
-
-<!--
-| | |
-| :---: | :---: |
-| ![](/assets/img/wg-puzzle1-start.jpg) | ![](/assets/img/wg-puzzle1-end.jpg) |
-| Start | End |
--->
-
-<p align="center">
-<img src="/assets/img/wg-puzzle1-start.jpg" width=500>
-</p>
-
-<p style="text-align: center;">Start</p>
-
-<p align="center">
-<img src="/assets/img/wg-puzzle1-end.jpg" width=500>
-</p>
-
-<p style="text-align: center;">End</p>
+{% include image-gallery.html, images: "wg-puzzle1-start.jpg", captions: "Start" %}
+{% include image-gallery.html, images: "wg-puzzle1-end.jpg", captions: "End" %}
 
 You have to press the 轉 characters to rotate the four characters surrounding 鎖 above it.
 The first one is easy, but for the latter two it was slightly difficult for me to play around and get the right answer!

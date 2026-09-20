@@ -1,0 +1,11 @@
+{
+  "title": "Aaron Kirtland",
+  "url": "https://kirt.land",
+  "language": "en",
+  "feed": {
+    "path": "/blog/feed.xml"
+  },
+  "minima": {
+    "date_format": "%b %-d, %Y"
+  }
+}

@@ -12,34 +12,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Dark mode toggle functionality
   const themeToggle = document.getElementById('themeToggle');
-  const themeIcon = themeToggle.querySelector('.theme-icon');
-  
-  // Check for saved theme preference or default to dark mode
-  const currentTheme = localStorage.getItem('theme') || 'dark';
-  if (currentTheme === 'light') {
-    document.body.classList.remove('dark-mode');
-    themeIcon.textContent = '☀️';
-  } else {
-    document.body.classList.add('dark-mode');
-    themeIcon.textContent = '🌙';
-  }
-  
-  themeToggle.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    
-    // Update icon and save preference
-    if (document.body.classList.contains('dark-mode')) {
-      themeIcon.textContent = '🌙';
-      localStorage.setItem('theme', 'dark');
+  if (themeToggle) {
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+
+    // Check for saved theme preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      document.body.classList.remove('dark-mode');
+      if (themeIcon) themeIcon.textContent = '☀️';
     } else {
-      themeIcon.textContent = '☀️';
-      localStorage.setItem('theme', 'light');
+      document.body.classList.add('dark-mode');
+      if (themeIcon) themeIcon.textContent = '🌙';
     }
-  });
+
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+
+      const darkMode = document.body.classList.contains('dark-mode');
+      if (themeIcon) themeIcon.textContent = darkMode ? '🌙' : '☀️';
+      localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    });
+  }
 
   // Translation toggle functionality
   const translationToggle = document.getElementById('translationToggle');
-  const translationIcon = translationToggle.querySelector('.translation-icon');
+  const translationIcon = translationToggle?.querySelector('.translation-icon');
   
   // Get all elements with translation data
   const translatableElements = document.querySelectorAll('[data-en][data-zh]');
@@ -59,18 +56,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
-    translationIcon.textContent = lang === 'en' ? '中' : 'EN';
+    if (translationIcon) translationIcon.textContent = lang === 'en' ? '中' : 'EN';
   }
   
   // Initialize content on page load
   updateLanguage(currentLang);
   
-  translationToggle.addEventListener('click', function() {
-    // Toggle language
-    currentLang = currentLang === 'en' ? 'zh' : 'en';
-    updateLanguage(currentLang);
-    localStorage.setItem('language', currentLang);
-  });
+  if (translationToggle) {
+    translationToggle.addEventListener('click', function() {
+      currentLang = currentLang === 'en' ? 'zh' : 'en';
+      updateLanguage(currentLang);
+      localStorage.setItem('language', currentLang);
+    });
+  }
 
   // Function to switch to a tab
   function switchToTab(targetTab) {
@@ -91,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Show/hide nested tabs for blog
     if (targetTab === 'blog') {
-      blogNestedTabs.classList.add('active');
+      blogNestedTabs?.classList.add('active');
       // Auto-collapse profile section when blog is selected
       if (section && !section.classList.contains('collapsed')) {
         section.classList.add('collapsed');
@@ -103,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadContent('blog-date', defaultBlogContent);
       }
     } else {
-      blogNestedTabs.classList.remove('active');
+      blogNestedTabs?.classList.remove('active');
       
       // Lazy load projects content if it's the projects tab
       if (targetTab === 'projects' && contentDiv && !contentDiv.dataset.loaded) {
@@ -151,7 +149,12 @@ document.addEventListener('DOMContentLoaded', function() {
         contentDiv.dataset.loaded = 'true';
       } else {
         fetch(url)
-          .then(response => response.text())
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Unable to load ${url}: ${response.status}`);
+            }
+            return response.text();
+          })
           .then(html => {
             contentCache[url] = html;
             contentDiv.innerHTML = html;
@@ -180,10 +183,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add active class to clicked button and corresponding content
       this.classList.add('active');
       const contentDiv = document.getElementById(targetNestedTab + '-content');
-      contentDiv.classList.add('active');
-      
-      // Lazy load content
-      loadContent(targetNestedTab, contentDiv);
+      if (contentDiv) {
+        contentDiv.classList.add('active');
+        loadContent(targetNestedTab, contentDiv);
+      }
       
       // Update URL hash
       window.location.hash = targetNestedTab;
@@ -240,4 +243,3 @@ document.addEventListener('DOMContentLoaded', function() {
   // Listen for hash changes
   window.addEventListener('hashchange', handleHashChange);
 });
-

@@ -119,10 +119,194 @@ a:hover {
 }
 
 body {
-  zoom: 0.7;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+body > header,
+body > article,
+body > footer,
+.main-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Bigfoot footnotes (previously generated from the Jekyll Sass bundle). */
+.bigfoot-footnote__button {
+  position: relative;
+  z-index: 5;
+  top: -0.1em;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 1.5em;
+  height: 0.95em;
+  margin: 0 0.1em 0 0.2em;
+  padding: 0.35em;
+  border: 0;
+  border-radius: 0.475em;
+  cursor: pointer;
+  background-color: rgba(110, 110, 110, 0.2);
+  font-size: 1rem;
+  line-height: 0;
+  vertical-align: middle;
+  transition: background-color 0.25s;
+}
+
+.bigfoot-footnote__button:hover,
+.bigfoot-footnote__button:focus,
+.bigfoot-footnote__button:active {
+  outline: 0;
+  background-color: rgba(110, 110, 110, 0.5);
+}
+
+.bigfoot-footnote__button.is-active {
+  background-color: #6e6e6e;
+}
+
+.bigfoot-footnote__button::after {
+  content: attr(data-footnote-number);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: rgba(110, 110, 110, 0.5);
+  font-size: 0.57em;
+  font-weight: 700;
+  line-height: normal;
+  transition: color 0.25s ease;
+}
+
+.bigfoot-footnote__button:hover::after,
+.bigfoot-footnote__button.is-active::after {
+  color: #fff;
+}
+
+.bigfoot-footnote__button__circle {
+  display: none;
+}
+
+.bigfoot-footnote__container {
+  position: relative;
+  display: inline-block;
+  text-indent: 0;
+}
+
+.bigfoot-footnote {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 1.97em 0;
+  border: 1px solid #c3c3c3;
+  border-radius: 0.5em;
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  line-height: 0;
+  transform: scale(0.1) translateZ(0);
+  transform-origin: 50% 0;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.bigfoot-footnote.is-positioned-top {
+  top: auto;
+  bottom: 0;
+}
+
+.bigfoot-footnote.is-active {
+  transform: scale(1) translateZ(0);
+  opacity: 0.97;
+}
+
+.bigfoot-footnote__wrapper {
+  position: relative;
+  z-index: 14;
+  display: inline-block;
+  box-sizing: inherit;
+  width: 22em;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0.5em;
+  background-color: #fafafa;
+  line-height: 0;
+}
+
+.bigfoot-footnote__content {
+  position: relative;
+  z-index: 8;
+  display: inline-block;
+  box-sizing: inherit;
+  max-height: 15em;
+  padding: 1.1em 1.3em 1.2em;
+  overflow: auto;
+  border-radius: 0.5em;
+  background: #fafafa;
+  color: #222;
+  line-height: normal;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bigfoot-footnote__content img {
+  max-width: 100%;
+}
+
+.bigfoot-footnote__content > :first-child {
+  margin-top: 0;
+}
+
+.bigfoot-footnote__content > :last-child {
+  margin-bottom: 0;
+}
+
+.bigfoot-footnote__tooltip {
+  position: absolute;
+  z-index: 12;
+  box-sizing: border-box;
+  width: 1.3em;
+  height: 1.3em;
+  margin-left: -0.65em;
+  transform: rotate(45deg);
+  border: 1px solid #c3c3c3;
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.is-positioned-bottom .bigfoot-footnote__tooltip {
+  top: -0.65em;
+}
+
+.is-positioned-top .bigfoot-footnote__tooltip {
+  bottom: -0.65em;
+}
+
+@media not print {
+  sup.footnote-print-only {
+    display: none !important;
+  }
+}
+
+@media print {
+  .bigfoot-footnote,
+  .bigfoot-footnote__button {
+    display: none !important;
+  }
 }
 
 body.dark-mode {
@@ -177,28 +361,33 @@ body.dark-mode papertitle {
   color: #e0e0e0;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+body.dark-mode .bigfoot-footnote {
+  background-color: #fff;
+  color: #222;
 }
 
-strong {
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+body.dark-mode .bigfoot-footnote__wrapper {
+  background-color: #fff;
+}
+
+body.dark-mode .bigfoot-footnote__tooltip {
+  border-top-color: #fff;
+}
+
+body.dark-mode .bigfoot-footnote__content,
+body.dark-mode .bigfoot-footnote__content p {
+  color: #222;
+}
+
+body.dark-mode .bigfoot-footnote__content a {
+  color: #0b57a3;
 }
 
 heading {
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
 papertitle {
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -212,8 +401,45 @@ a:hover papertitle {
 }
 
 name {
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 32px;
+}
+
+.conjecture,
+.corollary,
+.definition,
+.example,
+.proof,
+.question,
+.theorem {
+  display: block;
+  font-style: normal;
+}
+
+.conjecture::before,
+.corollary::before,
+.definition::before,
+.example::before,
+.proof::before,
+.question::before,
+.theorem::before {
+  content: attr(class) ". ";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.conjecture[text]::before,
+.corollary[text]::before,
+.definition[text]::before,
+.example[text]::before,
+.proof[text]::before,
+.question[text]::before,
+.theorem[text]::before {
+  content: attr(class) " (" attr(text) ") ";
+}
+
+.theorem {
+  font-style: italic;
 }
 
 .one {
@@ -243,9 +469,7 @@ span.highlight {
 
 /* Layout classes */
 .main-wrapper {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  min-width: 0;
 }
 
 .profile-toggle,
@@ -259,7 +483,10 @@ span.highlight {
   padding: 8px 16px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .profile-toggle:hover,
@@ -341,7 +568,9 @@ span.highlight {
   color: #666;
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
-  transition: all 0.3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .tab-button:hover {
@@ -395,7 +624,9 @@ span.highlight {
   color: #888;
   border-bottom: 1px solid transparent;
   margin-bottom: -1px;
-  transition: all 0.3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .nested-tab-button:hover {
@@ -417,7 +648,9 @@ span.highlight {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   margin-bottom: -1px;
-  transition: all 0.3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
   display: inline-block;
 }
 
@@ -473,4 +706,3 @@ span.highlight {
 .hidden {
   display: none;
 }
-

@@ -1,8 +1,11 @@
-<div class="menu">
-<ul>
-  <li><a href=/#blog>Home</a></li>
-  <!-- <li><a href="https://drive.google.com/file/d/1s8EjzPooE9aH1dTXudE_rUFZWU-w85nW/view?usp=sharing">CV</a></li>
-  <li><a href=/information.html>More Info</a></li>
-  <li><a href=/blog>Blog</a></li> -->
-</ul>
-</div>
+<nav class="content-tabs">
+  {% if page.url == "/" %}
+  <button class="tab-button active" data-tab="papers">Papers</button>
+  <button class="tab-button" data-tab="projects">Projects</button>
+  <button class="tab-button" data-tab="blog">Blog</button>
+  {% else %}
+  <a class="tab-button" href="/#papers">Papers</a>
+  <a class="tab-button" href="/#projects">Projects</a>
+  <a class="tab-button{% if blog_navigation %} active{% endif %}" href="/#blog">Blog</a>
+  {% endif %}
+</nav>

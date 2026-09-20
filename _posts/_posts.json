@@ -1,0 +1,5 @@
+{
+  "layout": "post.html",
+  "comments": true,
+  "permalink": "/blog/{{ page.fileSlug }}.html"
+}

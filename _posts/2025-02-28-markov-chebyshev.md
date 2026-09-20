@@ -4,6 +4,7 @@ tags: en
 title: Simple Markov, Chebyshev, and Hoeffding Inequalities
 last_modified_at: 2025-03-29
 published: true
+mathjax: true
 ---
 
 Here are simple visuals for the Markov, Chebyshev, and Chernoff inequalities, as well as a connection to Cramer's theorem and intuition about how to derive the Hoeffding inequality from them.
@@ -14,7 +15,7 @@ Here are simple visuals for the Markov, Chebyshev, and Chernoff inequalities, as
 Let $X$ be a random variable. Using an indicator variable, we have $\Pr\sqbracks{\abs{X-c}\geq a}=\E\sqbracks{𝟙_{\abs{X-c}\geq a}}$. We can recover various bounds/inequalities by considering different values of $c$ and functions $f(x)$ that dominate $𝟙_{|x-c|\geq a}$. By the monotonicity of the Lebesgue integral, we have that  $\E[𝟙_{|X-c|\geq a}]\leq \E[f(X)]$.
 </p>
 
-![](/assets/img/markov-cheby.png)
+{% include image-gallery.html, images: "markov-cheby.png" %}
 
 If $c=0$, $f(x)=x/a$, and $X$ is nonnegative, then we get Markov's inequality as
 

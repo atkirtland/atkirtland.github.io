@@ -1,31 +1,31 @@
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css" />
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css" />
 
-  <!-- Bigfoot -->
-  <script type="text/javascript" src="/assets/js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="/assets/js/bigfoot.js"></script>
-  <script type="text/javascript">
-    $.bigfoot({
-      positionContent: true,
-      // https://esham.io/2014/07/mathjax-and-bigfoot
-      activateCallback: function ($popover, $button) {
-        if (MathJax && !$button.data("mathjax-processed")) {
-          var content_wrapper = $popover.find(".bigfoot-footnote__content")[0];
-          MathJax.Hub.Queue(["Typeset", MathJax.Hub, content_wrapper]);
-          MathJax.Hub.Queue(function () {
-            $button.attr("data-bigfoot-footnote", content_wrapper.innerHTML);
-            $button.data("mathjax-processed", true);
-          });
-        }
-      },
-    });
-  </script>
+<!-- Bigfoot -->
+<script type="text/javascript" src="/assets/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/assets/js/bigfoot.js"></script>
+<script type="text/javascript">
+  $.bigfoot({
+    positionContent: true,
+    // https://esham.io/2014/07/mathjax-and-bigfoot
+    activateCallback: function ($popover, $button) {
+      if (
+        typeof MathJax !== "undefined" &&
+        MathJax.typesetPromise &&
+        !$button.data("mathjax-processed")
+      ) {
+        var content_wrapper = $popover.find(".bigfoot-footnote__content")[0];
+        MathJax.typesetPromise([content_wrapper]).then(function () {
+          $button.attr("data-bigfoot-footnote", content_wrapper.innerHTML);
+          $button.data("mathjax-processed", true);
+        });
+      }
+    },
+  });
+</script>
 
-  <script
-    defer
-    src="https://cloud.umami.is/script.js"
-    data-website-id="75414596-80d6-4fc6-a8c4-69b3a2fd03bd"
-  ></script>
-</head>
+<script
+  defer
+  src="https://cloud.umami.is/script.js"
+  data-website-id="75414596-80d6-4fc6-a8c4-69b3a2fd03bd"
+></script>
