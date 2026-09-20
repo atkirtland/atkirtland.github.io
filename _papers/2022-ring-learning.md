@@ -6,7 +6,7 @@ venue_link: "https://msp.org/involve/2025/18-2/p01.xhtml"
 year: 2022
 date: 2022-01-01
 link: "https://arxiv.org/abs/2007.13189"
-image: "assets/img/spectral.png"
+image: "assets/img/papers/spectral.webp"
 image_alt: ""
 image_width: 160
 image_height: 120

@@ -15,21 +15,18 @@ lon: -71.32184609949674
 
 岛屿位于Osamequin Nature Trails and Bird Sanctuary旁，因而我们能看到各种鸟类。
 
-| | |
-|![](https://lh3.googleusercontent.com/pw/AIL4fc-QP9NCH9EjTpwa3aDNu0U4D3x-pj9bzuK_tTugS9vH-IW6R11Vu7SD8csAaIKzkp94jUxcw-EIQYtUsxzTfWlu0ZmeuDiBtmdWZQx1mNd8_7UwLWWQvpSn1dPRG4k1o0EbRMhEZSqHaCjU-AW52H_eLQ=w1343-h1007-s-no)|![](https://lh3.googleusercontent.com/pw/AJFCJaU-7Nkwbmw3x10rBOJi0x54Eu_iEzNSCWOjwKshRcp1u1GP_Wa6HKSCJuAox5IjoGGRvQNlv-Mvd00mFX_dJ8qhdXlE7IlQ6VUBUu985vB15XlcbKHVO6jg6G4rEmyLsI1u1FetI0Su4GpEFJwJvf0s6g=w1343-h1007-s-no)|
+{% include image-gallery.html, images: "IMG_20230624_173454862|IMG_20230624_172155465" %}
 
 有只鹗在高高的鸟巢里喂食小鸟。
 不知为何，有十只鸟正在盯着同一个方向看。
 
 在结束旅行之前，我们看到三个人在一起钓鱼。我的朋友告诉我，其中一位竟然在用鸡腿作为鱼饵！
 
-| | | |
-|![](https://lh3.googleusercontent.com/pw/AIL4fc9WLYXO_EyDhNLkNR5fg2086-9vwFH78PWPMnI0LLO-WuzPQnbRvTuiuYhHPDytwbsm9NerWv8JUeRKzPRQmgYliR8tEyJtUYWMWnnKbFV8lW_s4vzvbfDPi8LOlb_3UCy0VwdajtVHFl5nxs08pWmbAg=w1343-h1007-s-no)|![](https://lh3.googleusercontent.com/pw/AIL4fc8Tm0n0BsYhkDzggntnsImxv7Cg5JhDbj4RAlJO_3SQ8QP786bH2cAOvybVL8kBKMMhmZevrAK9QftJSvQ2ONwHC1vWYBOVzEQC2Fv4qYGw9urWf6lWSFp9SmfbgAOr8uU9vRXuosyBkf-dKmUJJ-tZSQ=w1343-h1007-s-no)|![](https://lh3.googleusercontent.com/pw/AIL4fc_HbMKc11-1gunZVzjFEA7LF3Pshm7wL0aKMeQQrknTE-66Hofw9FvEexLwB_OqKJywaabXl0xFiXCt8QZ6j1uGLOFijijXEWDw7_pKU7zNY4QEWka_0nhr4RX_DViTmVxNasOFhQDHq68iuK8l894Tmg=w1343-h1007-s-no)|
+{% include image-gallery.html, images: "IMG_20230624_175936745|IMG_20230624_175952556|IMG_20230624_180304831" %}
 
 老板已经在这里生活了45年，最近5年他开始提供船只租赁服务。当我们回到帐篷后，他从房屋的窗户大声叫过来，让我们把船留在那里。
 
-| |
-|![](https://lh3.googleusercontent.com/pw/AIL4fc_yFxu7CdZQsLIcar1mbBPNs2M_iGxMrpwy1hCBChzrilrWiME1hxfPdE5j9zSxUrdjHJaLs_sUboIb4fJt3gycLjHSFCe-2JOtbEuFSQkI5tsBgwxQ96ZqyZeNOt7-CCfuGqcLHSjmI3pxP1kQPBrX2w=w1343-h1007-s-no)|
+{% include image-gallery.html, images: "IMG_20230624_180917609" %}
 
 旅行结束后，我们看到了一道鲜艳的双层彩虹！
 

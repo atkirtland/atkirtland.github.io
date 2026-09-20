@@ -6,7 +6,7 @@ venue_link: "https://www.degruyter.com/document/doi/10.1515/jmc-2020-0035/html?l
 year: 2022
 date: 2022-01-02
 link: "https://arxiv.org/abs/2104.10666"
-image: "assets/img/smearing.jpg"
+image: "assets/img/papers/smearing.webp"
 image_alt: ""
 image_width: 160
 image_height: 120

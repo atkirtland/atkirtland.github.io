@@ -6,7 +6,7 @@ venue_link: "https://doi.org/10.1137/22M152092X"
 year: 2023
 date: 2023-01-01
 link: "https://arxiv.org/abs/2209.11127"
-image: "assets/img/mesh.png"
+image: "assets/img/papers/mesh.webp"
 image_alt: "mesh"
 image_width: 160
 image_height: 120

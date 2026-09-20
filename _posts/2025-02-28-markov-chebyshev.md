@@ -11,11 +11,9 @@ Here are simple visuals for the Markov, Chebyshev, and Chernoff inequalities, as
 
 ## Markov, Chebyshev, and Chernoff
 
-<p>
 Let $X$ be a random variable. Using an indicator variable, we have $\Pr\sqbracks{\abs{X-c}\geq a}=\E\sqbracks{𝟙_{\abs{X-c}\geq a}}$. We can recover various bounds/inequalities by considering different values of $c$ and functions $f(x)$ that dominate $𝟙_{|x-c|\geq a}$. By the monotonicity of the Lebesgue integral, we have that  $\E[𝟙_{|X-c|\geq a}]\leq \E[f(X)]$.
-</p>
 
-{% include image-gallery.html, images: "markov-cheby.png" %}
+{% include image-gallery.html, images: "markov-cheby" %}
 
 If $c=0$, $f(x)=x/a$, and $X$ is nonnegative, then we get Markov's inequality as
 

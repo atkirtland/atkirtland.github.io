@@ -8,16 +8,6 @@ lon: -123.0870403033847
 published: true
 ---
 
-<style>
-table {
-  table-layout: fixed ;
-  width: 100% ;
-}
-img {
-  width: 100%;
-}
-</style>
-
 過去兩週，我去了俄勒岡大學的Oregon Programming Languages Summer School (OPLSS)。
 我在那裏學到了許多與類型論有關的理論，但是我也有不少時間可以用來探險！
 
@@ -26,8 +16,7 @@ img {
 
 ## 短程跑步
 
-| | |
-| ![](https://lh3.googleusercontent.com/pw/AIL4fc-7OmYNJd2S5P750cUi7vC3PasQf_kaEgNA35EYEnVvMsQfBgdxhJxxqr5MkXaLkeVPOeuGakZ_NGJkePpgG_B5W8Y5aApmJjPF3t1ZDQKrMBu-7uGyJKo-reqdVDtPZWlkIPo2RB3Xmjt4CQVh5Z6PAw=w1338-h1004-s-no?authuser=0) | ![](https://lh3.googleusercontent.com/pw/AIL4fc8uDZFsbl6MrLGIt5gZZDjOQrMzKml6KFpDoB1KJQhWvVrP0ZmfyVZbYOpWZx71EuEhJJT2xMAOkp7YR6j9VLU6I7UjzaRrY7LiYJwvCpF6hZbhMRVDdZuiNT2nc_dL1WfLYEUmC0fOdO1OLYYeit2zJQ=w1338-h1004-s-no?authuser=0) |
+{% include image-gallery.html, images: "IMG_20230702_073143151|IMG_20230702_075055857" %}
 
 尤金被稱為世界跑步之都，名副其實。
 走不到1英里就能到達波濤洶湧的Willamette河或是清涼的森林。難怪尤金是耐克的發源地，每月都有跑步比賽，比如[Butte To Butte](https://buttetobutte.com/)和[Hood to coast](https://hoodtocoast.com/)。
@@ -46,8 +35,7 @@ img {
 
 從俄勒岡大學出發，我先跑到Amazon跑道旁邊的7-11買小吃，即2塊complete cookies和1袋gummy worms。我也帶了兩塊水果。買好東西后，我沿着Amazon Running Trail/Rexius Trail跑到Ridgeline Trail。Amazon Trail相當不錯，從俄勒岡大學跑到終點再回來總共有10英里。
 
-| | |
-| ![](https://lh3.googleusercontent.com/pw/AIL4fc8iRGv6spZt3oaZzEn_e8sHBuIZbi3R2olRw-yAt9e8OabI_HSN91wbaHPO1-_l1ca50ZMg56o9l3nTbBmX9ocUF8LjMxHol0rkkCAkfCzlsqrTEmOGuwkMreXLf68Mcuh0khlraWZRkT2ZNii-eRtAtA=w1338-h1004-s-no?authuser=0) | ![](https://lh3.googleusercontent.com/pw/AIL4fc-kTpy3qutjeFQKUcBoeQI95wdb0LHVhLsHiUWb4LYikRJJybj8cVXzDXs4vl2l4I40b6gNEPjnb_ZdnxPb4AfMmPNqwqDOWjQuGwqwvxSIq8cy57Oebh4FVkhsA4PYUT0tmTsDYmw_Ipdhq9FYCnCjhg=w1338-h1004-s-no?authuser=0https://photos.app.goo.gl/kuzbbvqzmuCaoB4E7) |
+{% include image-gallery.html, images: "IMG_20230702_082855307_HDR|IMG_20230702_095838590_HDR" %}
 
 雖然Amazon Trail是城市跑道，但Ridgeline Trail的步道都是維護良好的森林徒步路線。我先跑到Raptor Center，然後決定去Spencer Butte。那裏非常美麗，有全景視野可以觀看尤金城，還能看到南邊的田野和森林。下山時，我走了西邊的步道，以便最終繞過山。西邊又窄又陡峭，有不少古老的路徑曾供徒步者使用，因此在一些地圖上出現，但現在不可用了。為了早點到達目的地，我嘗試走個捷徑，但很快發現道路既陡峭又容易迷路，也逐漸消失。下山後，我去了Mount Baldy，然後回到了猛禽中心。
 
@@ -55,8 +43,7 @@ img {
 
 表演中的貓頭鷹飛來飛去，所以我們得坐在整齊的木頭長凳或站在一邊。它會前後飛過，飛過坐着或持着呼啦圈的志願觀衆。因為它從小就在人類附近長大，所以還保持着幼鳥時期的聲音。訓練員說，一般的貓頭鷹長大後因為要狩獵，所以學會打獵時保持安靜，因此停止發出表達想吃食物或表示舒適的聲音。當它感到尷尬時，就會停止發出聲音。這隻貓頭鷹今年10歲左右，但因為有高級的飲食習慣，常被訓練員撫養，它很可能會活到40歲！猛禽中心還賣着不錯的紀念品，包括裝飾成貓頭鷹樣式的葫蘆。
 
-| | |
-| ![](https://lh3.googleusercontent.com/pw/AIL4fc-E_mF_DhUUceSxGn6B1aIfZUIljMNi97CX7iBN5_S8RVwC69fvnrf_kIUA2AeWEN-c-CujFT_cEfYTBTCqd7HwzdzimpY5Zn-cqJBVj6tGiJMIrQOlWKLP5kgoT3HFZSakMxNtE6l2lgL7vMXiKWf5DQ=w1338-h1004-s-no?authuser=0) | ![](https://lh3.googleusercontent.com/pw/AIL4fc-Z1ceMms567-yKGHNkyAKns6BRZlPfqsli8nO6WSIKMqmB-4u01aiNm9cSyLwnS7hH7X1I3cVRlTMC8pPvfRl1B-UgNk-2_UAntSDyYqcngXhMNGw4fr4EeZlQjhBU6txcv27QSzHh8CxWGuoBEMgdQw=w1338-h1004-s-no?authuser=0) |
+{% include image-gallery.html, images: "IMG_20230702_115536248|IMG_20230702_140117160" %}
 
 從猛禽中心出發，我在Spencer Butte Park和Blanton Ridge上跑到了Blanton Road。Blanton Ridge非常好。從Blanton Road開始，我向西南跑到南尤金草原（South Eugene Meadows），再跑了兩英里的乾燥路。地面裂開着，彷彿經歷了久旱。草原是一條美麗的小路，來回只有1.5英里，但與之前的森林小路形成了鮮明對比。道路上還有一個地方可以拍植物並在iNaturalist上上傳，以幫助研究者觀察當地的物種現象（[可以點這看看！](https://storymaps.arcgis.com/stories/25ef33c7345742ac808a07d64aaa0052)）。
 
@@ -64,8 +51,7 @@ img {
 
 ## 河岸探險
 
-| | |
-| ![](https://lh3.googleusercontent.com/pw/AIL4fc83VM1gJlHpUZQX3GHikmMrLIEsASqY7-ILlWTGcqHP2VOKXP0Fy7_vEJcj0KPBRKeBe6rXcYn7bD9sWasZZKPlVkBk0q5AQEQt38tJy7Ks7-gt69XghMOOVZMNF7jCK0SwzrwZEpHKh6CtYjkRSG4iYg=w1338-h1004-s-no?authuser=0) | ![](https://lh3.googleusercontent.com/pw/AIL4fc-VQJ0LtWhjlShetcrPyiwKMQbMe6IsUCDDGahQGQdZXH3IdRplY4c7BUy-PFiryHLvQxiBaWgS0zmeSg0hR2_hOOD060AgwEPHprkCNYdhjhCFOEN90PfV7ER3fhbZrfXLhEd6Mq1HNOrZVjbk3gebsQ=w1338-h1004-s-no?authuser=0) |
+{% include image-gallery.html, images: "IMG_20230702_165219110|IMG_20230702_165739581" %}
 
 在租賃站旁邊的Market of Choice裏買到了法棍麵包和一個西瓜後，我騎車回到了宿舍。在那裏，我和我的朋友，還有另一個想吃西瓜的人一同走到河邊，在河邊用河石將西瓜砸開共享。那個第三個人很快就離開了；似乎我們的吃法太土氣了。之後，我們便開始尋找方法探索河中的島嶼。
 
@@ -80,11 +66,6 @@ img {
 當我走到橋上時，我發現那個人已經給消防隊員報了警求助。消防車幾分鐘後就來了，但我朝他們跑去幾分鐘後，他們便離開了。過了幾分鐘，消防員又來了。一個男人在橋上問了我很多問題，如他在那裏站了多長時間、他會不會游泳、他很冷嗎等等。他最終用無線電請人開摩托船來救我的朋友。他們的船非常酷，船和水面之間的角度幾乎到了45度，而且非常快。難怪我的朋友說救援者非常樂意幫他。
 
 ## 城市探險
-
-| | |
-| ![](https://lh3.googleusercontent.com/pw/AIL4fc8Qk4HI1Uya26QnvbRaw225JfJ2kbVwuRb2_hmTqqWxb7RD0ukbMLM9UdvnzP6ylqBKBh13l2_FYLeu1iBGAJTa1TjB6C2yxVtVMFvtVcevExGtcLNyhvGkC__ndcHKqQhtan76n17BJYIF9GBgswjfxQ=w1338-h1004-s-no?authuser=0) | ![](https://lh3.googleusercontent.com/pw/AIL4fc-Cjh1R9J-jJfLC4ZFIGUHRwfjKjGR91Nza-Nsk-MRYzmwP4QrCadO21IAs_rE6HLffh5RGlNHlW-dM866a796Znr5ovRPzarLOvWItVN6ONX3hgCD5QUCBeA6O-e_XoyPQ_A53qpjlhP8uK5c56I8eNA=w1338-h1004-s-no?authuser=0) |
-| ![](https://lh3.googleusercontent.com/pw/AIL4fc9rBScvQFIAlKZEO7mTn9-Nn616XWyu0A8Jqs0RitBpX3XZMOTBUVcjUa0atPDfDSyuJ8Iay6622wVFvWaXMiXDizSPUstM91gLOcrGppuFohCvjfldtq_5SxHae6aAonT3ZOSfJpq7bDXklVu7lEaYWw=w1338-h1004-s-no?authuser=0) | ![](https://lh3.googleusercontent.com/pw/AIL4fc-76xgToyZb_xU5Qn5cucM-Ns7SuadmqcIJLCE4pVzPz-gU86MDSRf01-Cpjgvd6XRLhm_Tkbbt4h9kiJdkWATx491W0PkxttPv0X0qb2KzcfcO-rGQ7l4lvUMCkNXTRKtJZnpSd5M7lXL5uvH3ZrX7dA=w1338-h1004-s-no?authuser=0) |
-
 
 我在OPLSS遇到了一位非常熱愛城市探險的人（跟我在河岸探險的人）。來到新的城市，他總是想要探索廢墟或地下世界。經過一番搜索，我們找到了不少關於探索地點的提示。
 於是有一天，我們藉助PeaceHealth Bikes自行車租賃服務租了自行車，騎到了行人橋。行人橋下方隱藏着一個巨大的排水隧道，幾代青少年都曾在此玩耍。
@@ -108,4 +89,4 @@ img {
 
 最後的晚上，我和四位中國朋友一起玩了一局劇本殺《孽島疑雲》。
 
-![](https://lh3.googleusercontent.com/pw/AIL4fc-phwefLOTb1Ta9TyFqV6iWONRsbwH71T-91LygeBtkDKJL-fu1dUkrrHa2C5xgDk8hkygKftgt6cyMRcOR5K0CWYP2cWwqPqQ4LO4KCmiHBtA6uAMJxcDKyqu3efnaSs6hRMeT_aCnzzqjkYz5IYFCbA=w1784-h1004-s-no?authuser=0)
+{% include image-gallery.html, images: "image" %}

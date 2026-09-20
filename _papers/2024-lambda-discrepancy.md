@@ -7,7 +7,7 @@ venue_extra: ", <a href=\"https://openreview.net/forum?id=5Lv8kD03Mu\"><em>RLC F
 year: 2024
 date: 2024-01-01
 link: "https://arxiv.org/abs/2407.07333"
-image: "assets/img/tmaze-compact.png"
+image: "assets/img/papers/tmaze-compact.webp"
 image_alt: "mesh"
 image_width: 160
 image_height: 120

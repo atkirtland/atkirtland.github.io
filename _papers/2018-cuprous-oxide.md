@@ -5,7 +5,7 @@ venue: "Nanotechnology"
 venue_link: "https://iopscience.iop.org/article/10.1088/1361-6528/aab229"
 year: 2018
 date: 2018-01-01
-image: "assets/img/pad.png"
+image: "assets/img/papers/pad.webp"
 image_alt: ""
 image_width: 160
 image_height: 120

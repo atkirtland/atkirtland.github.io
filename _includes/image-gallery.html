@@ -1,6 +1,6 @@
 {% assign gallery_path_parts = page.filePathStem | split: "/" %}
 {% assign gallery_post_filename = gallery_path_parts | last %}
-{% assign gallery_base_path = "/assets/img/" | append: gallery_post_filename | append: "/" %}
+{% assign gallery_base_path = "/assets/img/posts/" | append: gallery_post_filename | append: "/" %}
 {% assign gallery_images = images | split: "|" %}
 {% assign gallery_captions = captions | default: "" | split: "|" %}
 
@@ -17,7 +17,7 @@
     {% endif %}
     <figure style="flex: 1 1 15rem; margin: 0; text-align: center;">
       <img
-        src="{{ gallery_base_path }}{{ gallery_image }}"
+        src="{{ gallery_base_path }}{{ gallery_image }}.webp"
         alt="{{ gallery_alt | escape }}"
         style="display: block; width: 100%; height: auto;"
       >

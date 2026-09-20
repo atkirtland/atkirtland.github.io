@@ -7,8 +7,8 @@ mathjax: true
 
 I've been playing [Word Game/文字遊戲](https://store.steampowered.com/app/1109570/\_/) recently, and I ran into a puzzle that made me ask some questions about generators of the symmetric group $S_7$!
 
-{% include image-gallery.html, images: "wg-puzzle1-start.jpg", captions: "Start" %}
-{% include image-gallery.html, images: "wg-puzzle1-end.jpg", captions: "End" %}
+{% include image-gallery.html, images: "wg-puzzle1-start", captions: "Start" %}
+{% include image-gallery.html, images: "wg-puzzle1-end", captions: "End" %}
 
 You have to press the 轉 characters to rotate the four characters surrounding 鎖 above it.
 The first one is easy, but for the latter two it was slightly difficult for me to play around and get the right answer!
