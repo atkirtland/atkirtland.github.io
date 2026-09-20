@@ -1,10 +1,10 @@
 ---
-layout: none
+permalink: /blog/microblog-view.html
 ---
 
 <h3>Microblog</h3>
 <div class="microblog-entries">
-{% assign sorted_entries = site.microblog | sort: 'date' | reverse %}
+{% assign sorted_entries = collections.microblog | sort: 'date' | reverse %}
 {% for entry in sorted_entries %}
   <div class="microblog-entry">
     <small class="microblog-timestamp">{{ entry.date | date: "%B %d, %Y at %I:%M %p" }}</small>
@@ -76,4 +76,3 @@ body.dark-mode .microblog-content img {
   }
 }
 </style>
-

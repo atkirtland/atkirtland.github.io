@@ -1,28 +1,30 @@
 ---
-layout: none
+permalink: /projects-view.html
 ---
 
 <table class="publications-table">
   <tbody>
-{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+{% assign sorted_projects = collections.projects | sort: 'date' | reverse %}
 {% for project in sorted_projects %}
     <tr>
       <td class="pub-image-cell">
-        <img src="{{ project.image }}" alt="{{ project.image_alt }}" width="{{ project.image_width }}" height="{{ project.image_height }}" class="pub-image">
+{% if project.data.image %}
+        <img src="{{ project.data.image }}" alt="{{ project.data.image_alt }}" width="{{ project.data.image_width }}" height="{{ project.data.image_height }}" class="pub-image">
+{% endif %}
       </td>
       <td class="pub-text-cell">
-{% if project.link %}
-        <a href="{{ project.link }}">
-          <papertitle>{{ project.title }}</papertitle>
+{% if project.data.link %}
+        <a href="{{ project.data.link }}">
+          <papertitle>{{ project.data.title }}</papertitle>
         </a>
 {% else %}
-        <papertitle>{{ project.title }}</papertitle>
+        <papertitle>{{ project.data.title }}</papertitle>
 {% endif %}
         <br>
-        {{ project.description }}
+        {{ project.data.description }}
         <br>
-{% if project.source %}
-        <a href="{{ project.source }}">Source</a>{% if project.date %}, {{ project.date | date: "%Y-%m" }}{% endif %}
+{% if project.data.source %}
+        <a href="{{ project.data.source }}">Source</a>{% if project.date %}, {{ project.date | date: "%Y-%m" }}{% endif %}
 {% elsif project.date %}
         {{ project.date | date: "%Y-%m" }}
 {% endif %}
@@ -32,4 +34,3 @@ layout: none
 {% endfor %}
   </tbody>
 </table>
-

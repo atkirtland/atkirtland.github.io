@@ -1,4 +1,5 @@
 ---
+title: "Mongolian Writing Systems"
 categories: Misc
 tags: en
 ---

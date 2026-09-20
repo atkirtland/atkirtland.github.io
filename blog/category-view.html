@@ -1,18 +1,15 @@
 ---
-layout: none
+permalink: /blog/category-view.html
 ---
 
 <h3>By Category</h3>
 <ul>
-{% assign sortedcats = site.categories | sort %}
-{% for cat in sortedcats %}
-{% assign catname = cat | first %}
-  <li>{{ catname }}
+{% for category in collections.categories %}
+  <li>{{ category.name }}
     <ul>
-{% assign sortedposts = site.categories[catname] | sort | reverse %}
-{% for post in sortedposts %}
+{% for post in category.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
         <small>{{ post.date | date_to_string }}</small>
       </li>
 {% endfor %}
@@ -20,4 +17,3 @@ layout: none
   </li>
 {% endfor %}
 </ul>
-

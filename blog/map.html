@@ -167,33 +167,36 @@
             iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
         });
-        {% assign sortedposts = site.categories.Outdoors | sort | reverse %}
-        {% for post in sortedposts %}
-            {% if post.trail %}
+        {% for category in collections.categories %}
+        {% if category.name == "Outdoors" %}
+        {% for post in category.posts %}
+            {% if post.data.trail %}
                 var latlngs = [
-                    {% for point in post.trail %}
+                    {% for point in post.data.trail %}
                         [{{ point.lat }}, {{ point.lon }}],
                     {% endfor %}
                 ];
                 var polyline = L.polyline(latlngs, {color: 'orange', weight: 7}).addTo(map);
-                polyline.bindPopup("<a href='{{ post.url }}'>{{ post.title }}</a>");
+                polyline.bindPopup("<a href='{{ post.url }}'>{{ post.data.title }}</a>");
 
                 // Add location to sidebar
                 var listItem = document.createElement("li");
                 var lat = latlngs[Math.round((latlngs.length - 1) / 2)][0];
                 var lon = latlngs[Math.round((latlngs.length - 1) / 2)][1];
-                listItem.innerHTML = "<a href='#' onclick='map.flyTo(["+lat+", "+lon+"], 7); return false;'>{{ post.title }}</a> <a href='{{ site.base_url }}{{ post.url }}'><i class='fa-solid fa-blog'></i></a>";
+                listItem.innerHTML = "<a href='#' onclick='map.flyTo(["+lat+", "+lon+"], 7); return false;'>{{ post.data.title }}</a> <a href='{{ post.url }}'><i class='fa-solid fa-blog'></i></a>";
                 document.getElementById("location-list").appendChild(listItem);
             {% else %}
-                var marker = L.marker([{{ post.lat }}, {{ post.lon }}], { icon: myIcon }).addTo(map);
-                marker.bindPopup("<a href='{{ site.base_url }}{{ post.url }}'>{{ post.title }}</a>");
+                var marker = L.marker([{{ post.data.lat }}, {{ post.data.lon }}], { icon: myIcon }).addTo(map);
+                marker.bindPopup("<a href='{{ post.url }}'>{{ post.data.title }}</a>");
 
                 // Add location to sidebar
                 var listItem = document.createElement("li");
-                listItem.innerHTML = "<a href='#' onclick='map.flyTo([{{ post.lat }}, {{ post.lon }}], 10); return false;'>{{ post.title }}</a> <a href='{{ site.base_url }}{{ post.url }}'><i class='fa-solid fa-blog'></i></a>";
+                listItem.innerHTML = "<a href='#' onclick='map.flyTo([{{ post.data.lat }}, {{ post.data.lon }}], 10); return false;'>{{ post.data.title }}</a> <a href='{{ post.url }}'><i class='fa-solid fa-blog'></i></a>";
                 document.getElementById("location-list").appendChild(listItem);
 
             {% endif %}
+        {% endfor %}
+        {% endif %}
         {% endfor %}
 
         var gpx = '/assets/map/pvd-bos.gpx'; // URL to your GPX file or the GPX itself

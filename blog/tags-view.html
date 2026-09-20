@@ -1,18 +1,15 @@
 ---
-layout: none
+permalink: /blog/tags-view.html
 ---
 
 <h3>By Tags</h3>
 <ul>
-{% assign sortedtags = site.tags | sort %}
-{% for tag in sortedtags %}
-{% assign tagname = tag | first %}
-  <li>{{ tagname }}
+{% for tag in collections.tags %}
+  <li>{{ tag.name }}
     <ul>
-{% assign sortedposts = site.tags[tagname] | sort %}
-{% for post in sortedposts %}
+{% for post in tag.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
         <small>{{ post.date | date_to_string }}</small>
       </li>
 {% endfor %}
@@ -20,4 +17,3 @@ layout: none
   </li>
 {% endfor %}
 </ul>
-

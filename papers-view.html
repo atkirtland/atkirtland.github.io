@@ -1,37 +1,33 @@
 ---
-layout: none
+permalink: /papers-view.html
 ---
-
-<p style="text-align: center; margin-bottom: 20px;">
-  See papers on <a href="https://scholar.google.com/citations?user=cHUOkpkAAAAJ&hl=en">Google Scholar</a>, or
-</p>
 
 <table class="publications-table">
   <tbody>
-{% assign sorted_papers = site.papers | sort: 'date' | reverse %}
+{% assign sorted_papers = collections.papers | sort: 'date' | reverse %}
 {% for paper in sorted_papers %}
     <tr>
       <td class="pub-image-cell">
-        <img src="{{ paper.image }}" alt="{{ paper.image_alt }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" class="pub-image">
+        <img src="{{ paper.data.image }}" alt="{{ paper.data.image_alt }}" width="{{ paper.data.image_width }}" height="{{ paper.data.image_height }}" class="pub-image">
       </td>
       <td class="pub-text-cell">
-{% if paper.link %}
-        <a href="{{ paper.link }}">
-          <papertitle>{{ paper.title }}</papertitle>
+{% if paper.data.link %}
+        <a href="{{ paper.data.link }}">
+          <papertitle>{{ paper.data.title }}</papertitle>
         </a>
 {% else %}
-        <papertitle>{{ paper.title }}</papertitle>
+        <papertitle>{{ paper.data.title }}</papertitle>
 {% endif %}
         <br>
-        {{ paper.authors }}
+        {{ paper.data.authors }}
         <br>
-{% if paper.venue_link %}
-        <em><a href="{{ paper.venue_link }}">{{ paper.venue }}</a></em>{% if paper.venue_extra %}{{ paper.venue_extra }}{% endif %}, {{ paper.year }}
+{% if paper.data.venue_link %}
+        <em><a href="{{ paper.data.venue_link }}">{{ paper.data.venue }}</a></em>{% if paper.data.venue_extra %}{{ paper.data.venue_extra }}{% endif %}, {{ paper.data.year }}
 {% else %}
-        <em>{{ paper.venue }}</em>, {{ paper.year }}
+        <em>{{ paper.data.venue }}</em>, {{ paper.data.year }}
 {% endif %}
-{% if paper.source %}
-        / <a href="{{ paper.source }}">Source</a>
+{% if paper.data.source %}
+        / <a href="{{ paper.data.source }}">Source</a>
 {% endif %}
         <br>
       </td>
@@ -39,4 +35,3 @@ layout: none
 {% endfor %}
   </tbody>
 </table>
-

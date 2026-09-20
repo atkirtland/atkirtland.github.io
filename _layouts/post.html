@@ -33,8 +33,7 @@
       <h1>{{ title }}</h1>
       <h3>Published: {{ page.date | date_to_string }}</h3>
 
-      {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y'
-      -%} {%- if last_modified_at -%}
+      {%- if last_modified_at -%}
       <h3>Last updated: {{ last_modified_at | date_to_string }}</h3>
       {%- else -%}
       <h3>Last updated: {{ page.date | date_to_string }}</h3>

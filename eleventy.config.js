@@ -52,6 +52,40 @@ export default function (eleventyConfig) {
     collectionApi.getFilteredByGlob("_posts/**/*.{md,markdown,html}").reverse(),
   );
 
+  // Jekyll provided site.categories and site.tags automatically. Build
+  // equivalent grouped collections for the migrated Liquid templates.
+  for (const key of ["categories", "tags"]) {
+    eleventyConfig.addCollection(key, (collectionApi) => {
+      const groups = new Map();
+
+      for (const post of collectionApi.getFilteredByGlob(
+        "_posts/**/*.{md,markdown,html}",
+      )) {
+        const rawValues =
+          key === "categories"
+            ? [post.data.category, post.data.categories]
+            : post.data[key];
+        const values = (Array.isArray(rawValues) ? rawValues : [rawValues])
+          .flat()
+          .filter(Boolean);
+
+        for (const value of values) {
+          if (!groups.has(value)) {
+            groups.set(value, []);
+          }
+          groups.get(value).push(post);
+        }
+      }
+
+      return [...groups]
+        .sort(([left], [right]) => left.localeCompare(right))
+        .map(([name, posts]) => ({
+          name,
+          posts: posts.sort((left, right) => right.date - left.date),
+        }));
+    });
+  }
+
   for (const name of ["papers", "projects", "microblog", "lists"]) {
     eleventyConfig.addCollection(name, (collectionApi) =>
       collectionApi
